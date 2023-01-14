@@ -1,0 +1,55 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  display: flex;
+  height: 60px;
+  padding: 20px;
+  align-items: center;
+}
+header .logo-holder {
+  flex: 0, 5;
+  display: flex;
+  justify-content: center;
+  margin-right: 1100px;
+  margin-left: 30px;
+}
+header nav {
+  flex: 0.99;
+}
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  display: inline-block;
+  font-size: 16px;
+}
+header nav ul li a {
+  display: inline-block;
+  color: rgb(119, 113, 113);
+  padding: 15px 30px;
+  font-weight: lighter;
+  margin: 15px;
+  transition: opacity 0, 85S;
+}
+header nav ul li.active a {
+  background: #d2d1c5;
+  font-weight: bold;
+  border-radius: 1.5em;
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+A:active {
+  opacity: 0.4;
+}
