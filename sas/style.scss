@@ -16,10 +16,14 @@ header {
         img{
         
         }
-        margin-right: 1100px;
-        margin-left: 30px;
+        margin-right: 700px;
+        margin-left: 200px;
 
   }
+.logo-holder {
+    margin-left: 0px;
+}
+   
   nav { flex:0.99;
      ul { list-style: none;
         margin:0;
@@ -74,73 +78,30 @@ header {
  
  }
 
+ @media only screen and (max-width:700px) {
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding:  0;
-   
-
-} 
-.slider { 
-position: relative;
-
-width: 60%;
-
-
-
-}
-.images {
-    
-    display: flex;
+  nav {
     width: 100%;
-    
-
-
-}
-.images img {
-    overflow: hidden; 
-
-    height: 600%;
-    width:  120%;
-    margin-left: 300px;
-    margin-top: 30px;
-    transition: all 0.35s ease;
+   position: absolute;
+   top: 10px;
+   right: 0;
+   z-index: 2;
+}  li { display: block;
+    margin-top: -7px;
+    margin-bottom: 10px;
+    margin-left: 230px;
    
-    
-    
-} .images input { display: none;
-}
-.dots  {
-    display:  flex;
-    justify-content: center;
-    margin-left: 650px;
-    margin: -0.px;
-    
    
 
-}
-.dots label {
-    height: 20px;
-    width:  20px;
-    border-radius: 50%;
-    border: solid rgb(0, 0, 0) 3px;
-    cursor: pointer;
-    transition: all 0.15s ease;
-    margin: 15px;
+} .logo-holder {
+    margin-left: 0px;
+    margin-top: -80px;  
+    size: 10px;
     
 }
 
-.dots label:hover { background-color: black;}
-#img1:checked ~ .m1 {
-    margin-left: -20;
-    
 }
-#img2:checked ~ .m2 {
-    margin-left: -120%;
-    
-}
-#img3:checked ~ .m3 {
-    margin-left: -266%;
-    
-}
+
+ 
+
+
