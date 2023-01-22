@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDLPhotography</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+   <div class="container">
+     <nav> 
+      <img src="images/sdl PhotoGraphy  Logo .png" class="logo">
+      <ul> 
+
+        <li> <a href="#">home</a></li>
+        <li> <a href="#">About</a></li>
+        <li> <a href="#">portofolio </a></li>
+        <li> <a href="#">Prices</a></li>
+        <li> <a href="#">Contact</a></li>
+    
+      </ul> 
+
+     </nav>
+     <div class="header-text">
+        <p> CarPhotography/CarVideography</p>
+        <h1> Be Creative</h1>
+     </div>
+   </div>  
+</div>
+<!---------------about-------------->
+<div id="about">
+    <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+                <img src="images/BMW P-3.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h2 class="sub-titel">About Me</h2>
+                <p>place holder text not jet desided what i will do here
+                    place holder text not jet desided what i will do here
+                    place holder text not jet desided what i will do here
+                    place holder text not jet desided what i will do here
+                    place holder text not jet desided what i will do here
+                    place holder text not jet desided what i will do here
+                </p>
+                <div class="tab-titles"> 
+                    <p class="tab-links active-link" onclick="opentab('Skills')" >Skills</p>
+                    <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('Programs')">Programs</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                         <li><span> 1 </span><br>place holder 1</li>
+                         <li><span> 2 </span><br>place holder 2</li>
+                         <li><span> 3 </span><br>place holder 3</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                         <li><span> After Effects </span><br>place holder 1</li>
+                         <li><span> Photoshop     </span><br>place holder 2</li>
+                         <li><span> Premiere pro  </span><br>place holder 3</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Programs">
+                    <ul>
+                         <li><span> 3 </span><br>place holder 1</l i>
+                         <li><span> 2 </span><br>place holder 2</li>
+                         <li><span> 1 </span><br>place holder 3</li>
+
+                    </ul>
+                </div>
+            </div>
+         </div>
+    </div>
+</div>
+
+
+<!-- ---------------services------------ --->
+<div id="services">
+    <div class="container">
+        <h2 class="sub-titel">my services</h2>
+        <div class="services-list">
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function  opentab(tabname){
+        for(tablink of tablinks){ 
+        item.classlist.remove("active-link");
+
+    }  
+    for(tabcontent of tabcontents){ 
+        tabcontent.classlist.remove("active-tab");
+
+    } 
+
+        
+ }   
+</script>
+  
+
+    
+</body>
+</html>
