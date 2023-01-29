@@ -9,23 +9,57 @@
     <script src="https://kit.fontawesome.com/6066e08350.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="header">
-    <div class="container2">
-        <nav>
-            
-           
-                 <a href="#"> <i class="fa-regular fa-house"></i> Home</a>
-                 <a href="#"> <i class="fa-solid fa-user"></i> About</a>
-                 <a href="#"> <i class="fa-solid fa-tags"></i> prices</a>
-                 <a href="#"> <i class="fa-solid fa-photo-film"></i> Work</a>
-                 <a href="#"> <i class="fa-solid fa-photo-film"></i> contact</a>
-                 
-            <div class="animation start-home"></div>
-        
-        </nav>
+ <section class="hero">
+    <div class="main-width">
+        <header>
+            <div class="logo">
+                
+            </div>
+
+            <nav>
+                <div class="hamb">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-list">
+                    <li class="btn2"><a href="#header">Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#prices"> prices</a></li>
+                    <li><a href="#portofolio">portofolio</a> </li>
+                    <li><a href="#Contact">Contact</a> </li>
+                   
+                </ul>
+            </nav>
+        </header>
+        <div class="container2">
+            <span class="text first-text">I'm </span>
+            <span class="text sec-text"> Photographer</span>
+        </div>
+    
+        <script>
+            const text = document.querySelector(".sec-text");
+    
+            const textLoad = () => {
+                setTimeout(() => {
+                    text.textContent = "Photographer";
+                }, 0);
+                setTimeout(() => {
+                    text.textContent = "videographer";
+                }, 4150);
+                setTimeout(() => {
+                    text.textContent = "SDL PhotoGraphy";
+                }, 8155); //1s = 1000 milliseconds
+            }
+    
+            textLoad();
+            setInterval(textLoad, 12000);
+        </script>    
        
+
     </div>
-</div>
+ </section>
+
 <!-- -----------about---------- -->
 <div id="about">
     <div class="container">
@@ -34,12 +68,12 @@
                 <img src="images/BMW P-3.jpg">
             </div>
             <div class="about-col-2">
-                <h2 class="sub-title">What do i do? </h2>
+                <h2 class="sub-title"> About  </h2>
 place holders i dont know what i will do here yet place holders i dont know what i will do here yet place holders i dont know what i will do here yetplace holders i dont know what i will do here yet
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')"> About me </p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('Programs')">Programs</p>
+                    <p class="tab-links" onclick="opentab('Programs')">gear i use </p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
@@ -57,10 +91,13 @@ place holders i dont know what i will do here yet place holders i dont know what
                     </ul>
                 </div>
                 <div class="tab-contents" id="Programs">
-                    <ul>
-                        <li><span>1</span><br>place holder</li>
-                        <li><span>2</span><br>place holder2</li>
-                        <li><span>3</span><br>place holder3</li>
+                    <ul> 
+                         
+                        <li><span>Camera</span><br>place holder</li>
+                        <li><span>Gimbal</span><br>place holder2</li>
+                        <li><span>PC</span><br>place holder3</li>
+                        <li><span>PC</span><br>place holder3</li>
+                        <li><span>PC</span><br>place holder3</li>
                     </ul>
                 </div>
             </div>
@@ -68,53 +105,116 @@ place holders i dont know what i will do here yet place holders i dont know what
     </div>
 </div>
 <!------------------prices----------------->
-<div id="prices">
-    <div class="container">
-        <h2 class="sub-title">My Prices </h2>
-        <div class="prices-list">
-            <div>
-                
-                <h2>Basic Photo pack</h2>
-                <li class="text-price">place holder</li>
-                <li class="text-price">place holder</li>
-                <li class="text-price">place holder</li>
-                <li class="text-price">place holder</li>
-                <a href="#" class="btn2">Order now  </a>
-            
-                
-            
 
-            </div>
-            <div>
-                <h2>pro Photo pack</h2>
-                <li class="text-price">place holder</li>
-                <li class="text-price">place holder</li>
-                <li class="text-price">place holder</li>
-                <li class="text-price">place holder</li>
-                <a href="#" class="btn2">Order now   </a>
-                
-                
-            </div>
-            <div>
-                <h2> Max Photo pack </h2>
+<div id="prices"></div>
 
-                <li class="text-price">place holder</li>
-                <li class="text-price">place holder</li>
-                <li class="text-price">place holder</li>
-                <li class="text-price">place holder</li>
-                <a href="#" class="btn2">  </a>
+<h2 class="sub-title"> Services  </h2>
 
-                
-                
-            </div>
-
-        </div>
-
-
+<section class="pricing">
+ <div class="card-wrapper">
+    <!---card header-->
+    <div class="card-header">
+        <img src="">
+        <h2>Basic Photo Pack</h2>
     </div>
-</div>
+    <!---card detail-->
+    <div class="card-detail">
+        <p><span class="fas fa-check check"></span>   <b>5</b> Photo's </p>
+        <p><span class="fas fa-check check"></span>  <b></b> Color Corection </p>
+        <p><span class="fas fa-times nocheck"></span> <b></b> Photoshop</p>
+        <p><span class="fas fa-times nocheck"></span> <b></b> Raw photo's</p>
+    </div>
+    <!---card price-->
+    <div class="card-price">
+        <p><sup>€</sup>50 <sub> </sub></p>
+    </div>
+    <!---card-button-->
+    <button class="card-button"> order now</button>
+ </div> 
 
+ <div class="card-wrapper">
+    <div class="card-header">
+        <img src="">
+        <h2>pro Photo Pack</h2>
+    </div>
+    <div class="card-detail">
+        <p><span class="fas fa-check check"></span> <b>10</b> Photo's</p>
+        <p><span class="fas fa-check check"></span> <b>Pro</b> Color Corection</p>
+        <p><span class="fas fa-check check"></span> <b>Basic </b> photoshop </p>
+        <p><span class="fas fa-times nocheck"></span> <b></b> Raw Photo's</p>
+    </div>
+    <div class="card-price">
+        <p><sup>€</sup>80<sub></sub></p>
+    </div>
+    <button class="card-button"> order now</button>
+ </div>
+ <div class="card-wrapper">
+    <div class="card-header">
+        <img src="">
+        <h2>Ultra Photo Pack</h2>
+    </div>
+    <div class="card-detail">
+        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
+        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
+        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
+        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
+    </div>
+    <div class="card-price">
+        <p><sup>€</sup>130<sub></sub></p>
+    </div>
+    <button class="card-button"> order now</button>
+ </div>
+ <div class="card-wrapper">
+    <div class="card-header">
+        <img src="">
+        <h2>Basic Video Pack</h2>
+    </div>
+    <div class="card-detail">
+        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
+        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
+        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
+        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
+    </div>
 
+    <div class="card-price">
+        <p><sup>€</sup>130<sub></sub></p>
+    </div>
+    <button class="card-button"> order now</button>
+ </div>
+ <div class="card-wrapper">
+    <div class="card-header">
+        <img src="">
+        <h2>Pro video Pack</h2>
+    </div>
+    <div class="card-detail">
+        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
+        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
+        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
+        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
+    </div>
+    <div class="card-price">
+        <p><sup>€</sup>180<sub></sub></p>
+    </div>
+    <button class="card-button"> order now</button>
+ </div>
+ <div class="card-wrapper">
+    <div class="card-header">
+        <img src="">
+        <h2>Ultra Video Pack</h2>
+    </div>
+    <div class="card-detail">
+        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
+        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
+        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
+        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
+    </div>
+    <div class="card-price">
+        <p><sup>€</sup>280<sub></sub></p>
+    </div>
+    <button class="card-button"> order now</button>
+ </div>
+ 
+</section>
 <!---------------------Portofolio----------------------->
 <div id="portofolio">
     <div class="container">

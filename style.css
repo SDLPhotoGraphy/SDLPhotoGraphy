@@ -10,128 +10,139 @@ body{
     background: #080808;
     color: #fff;
 }
-#header{
-    width: 100%;
-    height: 100vh;
-  
-    
-   
-    background-attachment: fixed;
-}
+
 
 .container{
     padding: 10px 10%;
     
-} nav{
-
-position: relative;
-margin: 100px auto 0;
-width: 510px;
-height: 50px;
-background: white;
-
-border-radius: 20PX;
-padding-inline: 10;
-font-size: 0;
-box-shadow: 0 2px 0 rgba(0, 0, 0, 0,1);
-}
-
-nav a {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: black;
-    text-decoration: none;
-    line-height: 50px;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    text-align: center;
-    
-
-} nav .animation{
-    position:absolute;
+} 
+.hero{
+    width: 100%;
     height: 100%;
-    top: 0;
-    z-index: 0;
-    background: #ff004f;
-    border-radius: 20px;
-    transition: all .5S ease 0s;
     
+    min-height: 100vh;
     
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
-a:nth-child(1){
-    width: 100px;
+header {
+    padding: 40px 0 0px ;
+    display: flex;
+    margin-right: 130px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
 
-} nav .start-home,a:nth-child(1):hover~.animation{
+} 
+.logo i {
+    height: 55px;
+    width: 55px ;
+    background: transparent;
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
+border-radius: 50%;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+font-size:20px;
+cursor: pointer;}
+nav .hamb {
+    width: 35px;
+    height: 24px;
+    right: 3%;
+    top: 6%;
+    z-index: 5;
+    background: white;
+    position: absolute;
+    cursor: pointer;
+    display:none;
     
-    width: 100px;
-    left: 0;
-    
-   
+} nav .hamb span{
+    display: block;
+    background: #2ecc71;
+    width: 100%;
+    height: 3px;
+    transition: .3s;
+    transition-property: transfrom, opacity;
 
 }
+nav .hamb span:nth-child(2){
+    margin: 7px 0px;
 
+} nav .nav-list{
+    list-style: none;
 
-
-a:nth-child(2){
-    width: 100px;
-}
-nav .start-about,a:nth-child(2):hover~.animation{
-    width: 100px;
-    left: 100px;
-    transform: scale(1.1);
-    
-    
-}
-a:nth-child(3){
-    width: 100px;
-}
-nav .start-prices,a:nth-child(3):hover~.animation{
-    width: 100px;
-    left: 200px;
-    transform: scale(1.1);
-    
-    
-    
-}
-a:nth-child(4){
-    width: 100px;
-}
-nav .start-work,a:nth-child(4):hover~.animation{
-    width: 100px;
-    left: 300px;
-    transform: scale(1.1);
-    
-    
-}
-a:nth-child(5){
-    width: 100px;
-    
-}
-nav .start-contact,a:nth-child(5):hover~.animation{
-    width: 120px;
-    left: 390px;
-    
-}
-
-
-
+} nav .nav-list li {
+    display: inline-block;
+} nav .nav-list li a{
+    display: inline-block;
+    color: #eee;
+    margin-left: 55px;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
 
 
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
 }
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-}
-.header-text h1 span{
+nav .nav-list li:not(:last-child) a:hover{
     color: #ff004f;
-} .titel-1{
-    font-size: 80px;
-    
+    transition: .4s;
 }
+nav .nav-list li.btn2 a{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #ff004f;
+    padding: 9px 28px;
+    border-radius: 20px;
+    line-height: 1.3;
+    
+    font-weight: 500;
+
+
+       }
+       nav .nav-list li.btn2:hover a {
+        background: #ff004f;
+        color: white;
+        border: 2px solid transparent;
+        transition: .4s;
+       }
+       .container2{
+        margin-left: 150px;
+        margin-top: 200px;
+        
+       }
+    
+    .container2 .text{
+        position: relative;
+        color:#ff004f;
+        font-size: 60px;
+        font-weight: 600;
+    }
+    .container2 .text.first-text{
+        color: #FFF;
+    }
+    .text.sec-text:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color:  #080808;
+        border-left: 2px solid #ff004f;
+        animation: animate 4s steps(12) infinite;
+    }
+    @keyframes animate{
+        40%, 60%{
+            left: calc(100% + 4px);
+        }
+        100%{
+            left: 0%;
+        }
+    }
+     
+      
 /* -----------what do i do?. --------------- */
 #about{
     padding: 80px 0;
@@ -172,6 +183,8 @@ nav .start-contact,a:nth-child(5):hover~.animation{
     position: relative;
     transition: 0.6s;
     transition: color 0.6s;
+    
+    
 }
 .tab-links::after{
     content: '';
@@ -187,6 +200,7 @@ nav .start-contact,a:nth-child(5):hover~.animation{
 
 .tab-links.active-link::after{
     width: 50%;
+   
     
 }
 
@@ -213,65 +227,90 @@ nav .start-contact,a:nth-child(5):hover~.animation{
 
 }
  /*------------------prices-------------*/
-#prices{
-    padding: 30px 0;
-
-}
-.prices-list{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-
-} .prices-list div {
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 20px;
-    transition:  0.5s, transform 0.5s;
-    
-} .prices-list div h2 {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-
-
-}
-.prices-list div a {
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    margin-top: 20px;
-    display:inline-block;
-
-} .prices-list div:hover{
-    background: #ff004f;
-    transform: translateY(-10px);
-}.text-price{
-    font-size: 30px;
-
-} .btn2{ 
-    display: block;
-    margin: aut;
-    width: fit-content;
-    border: 1px solid rgb(255, 255, 255);
-    padding: 14px 50px;
-align-items: center;
-    margin-bottom: 25px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: white;
-    transition:  0.5s;
-} .btn2:hover{
-    background: #ffffff;
+ .pricing{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem;
+ }
+ .card-wrapper{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 390px;
+ height: 400px;
+ background-color: white;
+ color: black;
+ border-radius: 20px;
+ box-shadow: 0 5px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0, 0.22);
+ padding: 2rem;
+ margin: 1rem;
+ transition: all 0.2s ease-in;
+ } 
+ .card-wrapper:hover{
     transform: scale(1.1);
-    color: black;
-}.btn2{
+    
+ } .card-wrapper:hover .card-header> h2{
+    transform: scale(1.1);
+    color: #ff004f;
+    letter-spacing: 2;
+ }
+ .card-header{
+    margin: 1rem;
+    text-align: center;
+ }
+ .card-header >img{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+ } .card-detail{
+    width: 100%;
+
+ }
+ .card-detail > p{
     padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
     border-bottom: 1px solid #d5d5d5;
+ } .check{
+    color: #00ff15;
+ }
+ .nocheck {
+    color: #ec615d;
+ } .card-detail >p:hover{
+    background-color: #d5d5d5;
+}
+.card-price{
+ display: flex;
+ align-items: flex-start;
+ margin: 1rem;
+}
+.card-price > p {
+    font-size: 3rem;
+    font-weight: 800;
+} .card-price > p > sup,
+.card-price > p > sub {
+    font-size: 1rem;
+
+} .card-button {
+    padding: 0.6rem 3rem ;
+    border: 2px solid #ff004f;
+    background-color: #ff004f;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 50ms  ease-in;
+} .card-button:hover {
+    border: 2px solid #ff004f;
+    background-color: transparent;
+    color: #ff004f;
+    font-weight: 800;
+
 
 }
+ 
+
 
 /*------------------portofolio---------------*/
 #portofolio{
@@ -350,7 +389,7 @@ text-align: center;
     background: #ff004f;
     transform: scale(1.1);
     
-}
+} 
 
 
 
