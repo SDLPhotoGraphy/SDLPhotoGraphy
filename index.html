@@ -6,32 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDL PhotoGraphy</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/6066e08350.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
- <section class="hero">
-    <div class="main-width">
-        <header>
-            <div class="logo">
-                
-            </div>
-
-            <nav>
-                <div class="hamb">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul class="nav-list">
-                    <li class="btn2"><a href="#header">Home</a></li>
-                    <li><a href="#about">About </a></li>
-                    <li><a href="#prices"> prices</a></li>
-                    <li><a href="#portofolio">portofolio</a> </li>
-                    <li><a href="#Contact">Contact</a> </li>
-                   
-                </ul>
-            </nav>
-        </header>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/sdl PhotoGraphy  Logo .png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
         <div class="container2">
             <span class="text first-text">I'm </span>
             <span class="text sec-text"> Photographer</span>
@@ -59,6 +50,8 @@
 
     </div>
  </section>
+    </div>
+</div>
 
 <!-- -----------about---------- -->
 <div id="about">
@@ -104,12 +97,15 @@ place holders i dont know what i will do here yet place holders i dont know what
         </div>
     </div>
 </div>
-<!------------------prices----------------->
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container"> 
+        <h1 class="sub-title">My Services</h1>
+    </div>
+     
+            <div id="prices"></div>
 
-<div id="prices"></div>
-
-<h2 class="sub-title"> Services  </h2>
-
+        
 <section class="pricing">
  <div class="card-wrapper">
     <!---card header-->
@@ -215,7 +211,9 @@ place holders i dont know what i will do here yet place holders i dont know what
  </div>
  
 </section>
-<!---------------------Portofolio----------------------->
+           
+</div>
+<!-- ----------portfolio------------ -->
 <div id="portofolio">
     <div class="container">
         <h2 class="sub-title">My work </h2>
@@ -253,8 +251,37 @@ place holders i dont know what i will do here yet place holders i dont know what
 </div>
 
 
-
-
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> de.luycker.seppe@icloud.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © SDL PhotoGraphy </p>
+    </div>
+</div>
 
 
 
@@ -276,3 +303,35 @@ place holders i dont know what i will do here yet place holders i dont know what
 
 </script>
 
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbz4yD7Cxxuck8zHhsMBWYkPWtw2fToK6agsIuYUW4zjMdZbJ6q6ACp5XcsgOKV4B9NTOA/exec>' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
