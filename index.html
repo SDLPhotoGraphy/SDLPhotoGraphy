@@ -267,14 +267,31 @@ place holders i dont know what i will do here yet place holders i dont know what
                 </div>
                 <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+           
+            <div class="overlay">
+                <div class="box">
+                    <p>Your email is submited successfully</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <form>
+                    <div class="input-field">
+                        <label for="name">Name</label>
+                        <input type="text" name="Name" id="name" placeholder="Your name">
+                    </div>
+                    <div class="input-field">
+                        <label for="email">Email <span>*</span> </label>
+                        <input type="email" name="Email" id="email" placeholder="Your email" required >
+                    </div>
+                    <div class="input-field">
+                        <label for="msg">Message <span>*</span> </label>
+                        <textarea name="msg" id="msg" placeholder="hi how can i help you "></textarea>
+                    </div>
+                    <button class="btn2" type="submit">Send</button>
                 </form>
-                <span id="msg"></span>
+                
+            </div>
+            <script src="./script.js"></script>
             </div>
         </div>
     </div>
@@ -315,23 +332,6 @@ place holders i dont know what i will do here yet place holders i dont know what
     }
 
 </script>
-<script>
-    const scriptURL = '<https://script.google.com/macros/s/AKfycbz4yD7Cxxuck8zHhsMBWYkPWtw2fToK6agsIuYUW4zjMdZbJ6q6ACp5XcsgOKV4B9NTOA/exec>' // add your own app script link here
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+
 </body>
 </html>

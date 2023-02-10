@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
+    background-image: url(images/SDL\ Photography\ self\ foto.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -52,6 +52,7 @@ nav ul li a::after{
     height: 3px;
     background: #ff004f;
     position: absolute;
+   
     left: 0;
     bottom: -6px;
     transition: 0.5s;
@@ -349,17 +350,38 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
-    transition: background 0.5s;
+    transition:  0.5s;
 }
 .btn:hover{
     background: #ff004f;
 }
 
 /* ---------contact-------- */
+
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #0000003d;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.overlay .box{
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 3px 40px rgba(0, 0, 0, 0.13);
+}
+
+
+
+/* ---------contact-------- */
 .contact-left{
     flex-basis: 35%;
 }
-.contact-right{
+.wrapper{
     flex-basis: 60%;
 }
 .contact-left p{
@@ -389,7 +411,7 @@ nav ul li a:hover::after{
     display: inline-block;
     background: #ff004f;
 }
-.contact-right form{
+.wrapper form{
     width: 100%;
 }
 form input, form textarea{
@@ -429,7 +451,7 @@ nav .fas{
     display: none;
 }
 
-@media only screen and (max-width: 667px){
+@media only screen and (max-width: 500px){
     #header{
         background-image: url(images/phone-background.png);
     }
@@ -487,9 +509,4 @@ nav .fas{
     .copyright{
         font-size: 14px;
     }
-}
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
 }
