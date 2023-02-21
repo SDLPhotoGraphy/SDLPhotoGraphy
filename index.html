@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDL PhotoGraphy</title>
+    <title>Personal Portfolio Website - Easy Tutorials</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
@@ -16,220 +16,127 @@
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">prices</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
-        
-
+        <div class="header-text">
+            <p>PhotoGhraphyer/VideoGraphyer</p>
+            <h1>Hi, I'm <span>SDL Photography</span><br></h1>
+        </div>
+    </div>
+</div>
 <!-- -----------about---------- -->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/BMW P-3.jpg">
+                <img src="images/user.png">
             </div>
             <div class="about-col-2">
-                <h2 class="sub-title"> About Me </h2>
-hi im Seppe 19 years old 
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis, elementum molestie tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris eleifend magna id ante convallis mattis. Quisque in sem tristique, dictum sapien et, accumsan libero.</p>
+
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')"> What do i offer? </p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('Programs')">gear i use </p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Photo</span><br> so mostly i am doing Car photography, but im open for new things. so if you want photo's of somthing els. just contact me,   </li>
-                        <li><span> Video</span><br>place holder 2</li>
-                        <li><span> Edeting</span><br>place holder 3</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>1 </span><br>place holder 1</li>
-                        <li><span>2</span><br>place holder 2</li>
-                        <li><span>3</span><br>place holder 3</li>
-                        <li><span>4</span><br>place holder4</li>
+                        <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                        <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                        <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="Programs">
-                    <ul> 
-                         
-                        <li><span>Camera</span><br>place holder</li>
-                        <li><span>Gimbal</span><br>place holder2</li>
-                        <li><span>PC</span><br>place holder3</li>
-                        <li><span>PC</span><br>place holder3</li>
-                        <li><span>PC</span><br>place holder3</li>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                        <li><span>2016</span><br>MBA from MIT Bangalore.</li>
+                        <li><span>2014</span><br>BBA from ISM Bangalore.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- ---------Prices---------------- -->
+<!-- ---------services---------------- -->
 <div id="services">
-    <div class="container"> 
-        <h1 class="sub-title">My Prices</h1>
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
     </div>
-     
-            <div id="prices"></div>
-
-        
-<section class="pricing">
- <div class="card-wrapper">
-    <!---card header-->
-    <div class="card-header">
-        <img src="">
-        <h2>Basic Photo Pack</h2>
-    </div>
-    <!---card detail-->
-    <div class="card-detail">
-        <p><span class="fas fa-check check"></span>   <b>5</b> Photo's </p>
-        <p><span class="fas fa-check check"></span>  <b></b> Color Corection </p>
-        <p><span class="fas fa-times nocheck"></span> <b></b> Photoshop</p>
-        <p><span class="fas fa-times nocheck"></span> <b></b> Raw photo's</p>
-    </div>
-    <!---card price-->
-    <div class="card-price">
-        <p><sup>€</sup>50 <sub> </sub></p>
-    </div>
-    <!---card-button-->
-    <button class="card-button"> order now</button>
- </div> 
-
- <div class="card-wrapper">
-    <div class="card-header">
-        <img src="">
-        <h2>pro Photo Pack</h2>
-    </div>
-    <div class="card-detail">
-        <p><span class="fas fa-check check"></span> <b>10</b> Photo's</p>
-        <p><span class="fas fa-check check"></span> <b>Pro</b> Color Corection</p>
-        <p><span class="fas fa-check check"></span> <b>Basic </b> photoshop </p>
-        <p><span class="fas fa-times nocheck"></span> <b></b> Raw Photo's</p>
-    </div>
-    <div class="card-price">
-        <p><sup>€</sup>80<sub></sub></p>
-    </div>
-    <button class="card-button"> order now</button>
- </div>
- <div class="card-wrapper">
-    <div class="card-header">
-        <img src="">
-        <h2>Ultra Photo Pack</h2>
-    </div>
-    <div class="card-detail">
-        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
-        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
-        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
-        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
-    </div>
-    <div class="card-price">
-        <p><sup>€</sup>130<sub></sub></p>
-    </div>
-    <button class="card-button"> order now</button>
- </div>
- <div class="card-wrapper">
-    <div class="card-header">
-        <img src="">
-        <h2>Basic Video Pack</h2>
-    </div>
-    <div class="card-detail">
-        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
-        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
-        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
-        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
-    </div>
-
-    <div class="card-price">
-        <p><sup>€</sup>130<sub></sub></p>
-    </div>
-    <button class="card-button"> order now</button>
- </div>
- <div class="card-wrapper">
-    <div class="card-header">
-        <img src="">
-        <h2>Pro video Pack</h2>
-    </div>
-    <div class="card-detail">
-        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
-        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
-        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
-        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
-    </div>
-    <div class="card-price">
-        <p><sup>€</sup>180<sub></sub></p>
-    </div>
-    <button class="card-button"> order now</button>
- </div>
- <div class="card-wrapper">
-    <div class="card-header">
-        <img src="">
-        <h2>Ultra Video Pack</h2>
-    </div>
-    <div class="card-detail">
-        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
-        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
-        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
-        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
-    </div>
-    <div class="card-price">
-        <p><sup>€</sup>280<sub></sub></p>
-    </div>
-    <button class="card-button"> order now</button>
- </div>
- 
-</section>
-           
 </div>
 <!-- ----------portfolio------------ -->
-<div id="portofolio">
+<div id="portfolio">
     <div class="container">
-        <h2 class="sub-title">My work </h2>
- 
+        <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/bmw 6.jpg" alt="">
+                <img src="images/BMW P-4.jpg">
                 <div class="layer">
-                    <h3>rear side  shot </h3>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3>Profesional Photo's</h3>
+                    <p></p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
                 </div>
-
             </div>
-             <div class="work">
-                <img src="images/BMW P-4.jpg" alt="">
-                <div class="layer">
-                    <h3>side shot  </h3>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-
-            </div>
-            
             <div class="work">
-                <img src="images/BMW 5.jpg" alt="">
+                <img src="imagegs/work-2.pn">
                 <div class="layer">
-                    <h3>front shot </h3>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3></h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
                 </div>
-
             </div>
-           
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
         </div>
-        <a href="#" class="btn">see more </a>
+        <a href="#" class="btn">See more</a>
     </div>
 </div>
-
-
 <!-- ----------contact------------- -->
 <div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fas fa-paper-plane"></i> de.luycker.seppe@icloud.com</p>
+                <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
                 <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
                 <div class="social-icons">
                     <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
@@ -239,36 +146,19 @@ hi im Seppe 19 years old
                 </div>
                 <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
             </div>
-           
-            <div class="overlay">
-                <div class="box">
-                    <p>Your email is submited successfully</p>
-                </div>
-            </div>
-            <div class="wrapper">
-                <form>
-                    <div class="input-field">
-                        <label for="name">Name</label>
-                        <input type="text" name="Name" id="name" placeholder="Your name">
-                    </div>
-                    <div class="input-field">
-                        <label for="email">Email <span>*</span> </label>
-                        <input type="email" name="Email" id="email" placeholder="Your email" required >
-                    </div>
-                    <div class="input-field">
-                        <label for="msg">Message <span>*</span> </label>
-                        <textarea name="msg" id="msg" placeholder="hi how can i help you "></textarea>
-                    </div>
-                    <button class="btn2" type="submit">Send</button>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
-                
-            </div>
-            <script src="./script.js"></script>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright © SDL PhotoGraphy </p>
+        <p>Copyright © Kevin. Made wtih <i class="fas fa-heart"></i> by <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1">Easy Tutorials</a></p>
     </div>
 </div>
 
@@ -304,6 +194,23 @@ hi im Seppe 19 years old
     }
 
 </script>
-
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
