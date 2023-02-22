@@ -331,6 +331,9 @@ nav .fas{
     #header{
         background-image: url(images/phone-background.png);
     }
+    .container{
+        padding: 10px 15%;
+    }
     .header-text{
         margin-top: 100%;
         font-size: 16px;
