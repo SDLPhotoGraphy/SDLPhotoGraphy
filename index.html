@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <title>SDL PhotoGraphy</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
     <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
+      
+        <nav >
+            <img src="images/sdl PhotoGraphy  Logo .png" class="logo">
+            <div id="fixed">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -21,11 +23,13 @@
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+        </div>
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>UI/UX Designer</p>
-            <h1>Hi, I'm <span>Kevin</span><br>Jen From Australia</h1>
+            
+            <h1> I'm <span>SDL Photography</span><br></h1>
+            <p>PhotoGhraphy/VideoGraphy/Graphic Design</p>
         </div>
     </div>
 </div>
@@ -73,29 +77,121 @@
 </div>
 <!-- ---------services---------------- -->
 <div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fas fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fas fa-crop-alt"></i>
-                <h2>UI/UX Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fab fa-app-store"></i>
-                <h2>App Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
+    <div class="container"> 
+        <h1 class="sub-title">My Prices</h1>
     </div>
+    
+     
+            <div id="prices"></div>
+
+        
+<section class="pricing">
+ <div class="card-wrapper">
+    <!---card header-->
+    <div class="card-header">
+        <img src="">
+        <h2>Basic Photo Pack</h2>
+    </div>
+    <!---card detail-->
+    <div class="card-detail">
+        <p><span class="fas fa-check check"></span>   <b>5</b> Photo's </p>
+        <p><span class="fas fa-check check"></span>  <b></b> Color Corection </p>
+        <p><span class="fas fa-times nocheck"></span> <b></b> Photoshop</p>
+        <p><span class="fas fa-times nocheck"></span> <b></b> Raw photo's</p>
+    </div>
+    <!---card price-->
+    <div class="card-price">
+        <p><sup>€</sup>50 <sub> </sub></p>
+    </div>
+    <!---card-button-->
+    <a href="mailto:de.luycker.seppe@icloud.com?subject= Basic Photo Pack  &body= I want the Basic Photo Pack"><button class="card-button">contact me</button></a>
+ </div> 
+
+ <div class="card-wrapper">
+    <div class="card-header">
+        <img src="">
+        <h2>pro Photo Pack</h2>
+    </div>
+    <div class="card-detail">
+        <p><span class="fas fa-check check"></span> <b>10</b> Photo's</p>
+        <p><span class="fas fa-check check"></span> <b>Pro</b> Color Corection</p>
+        <p><span class="fas fa-check check"></span> <b>Basic </b> photoshop </p>
+        <p><span class="fas fa-times nocheck"></span> <b></b> Raw Photo's</p>
+    </div>
+    <div class="card-price">
+        <p><sup>€</sup>80<sub></sub></p>
+    </div>
+    <a href="mailto:de.luycker.seppe@icloud.com?subject= pro Photo Pack  &body= I want the pro Photo Pack"><button class="card-button">contact me</button></a>
+ </div>
+ <div class="card-wrapper">
+    <div class="card-header">
+        <img src="">
+        <h2>Ultra Photo Pack</h2>
+    </div>
+    <div class="card-detail">
+        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
+        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
+        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
+        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
+    </div>
+    <div class="card-price">
+        <p><sup>€</sup>130<sub></sub></p>
+    </div>
+    <a href="mailto:de.luycker.seppe@icloud.com?subject= Ultra Photo Pack  &body= I want the Ultra Photo Pack"><button class="card-button">contact me</button></a>
+ </div>
+ <div class="card-wrapper">
+    <div class="card-header">
+        <img src="">
+        <h2>Basic Video Pack</h2>
+    </div>
+    <div class="card-detail">
+        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
+        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
+        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
+        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
+    </div>
+
+    <div class="card-price">
+        <p><sup>€</sup>130<sub></sub></p>
+    </div>
+    <a href="mailto:de.luycker.seppe@icloud.com?subject= Basic Video Pack  &body= I want the Basic Video Pack"><button class="card-button">contact me</button></a>
+ </div>
+ <div class="card-wrapper">
+    <div class="card-header">
+        <img src="">
+        <h2>Pro video Pack</h2>
+    </div>
+    <div class="card-detail">
+        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
+        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
+        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
+        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
+    </div>
+    <div class="card-price">
+        <p><sup>€</sup>180<sub></sub></p>
+    </div>
+    <a href="mailto:de.luycker.seppe@icloud.com?subject= Pro video Pack  &body= I want the Pro video Pack"><button class="card-button">contact me</button></a>
+ </div>
+ <div class="card-wrapper">
+    <div class="card-header">
+        <img src="">
+        <h2>Ultra Video Pack</h2>
+    </div>
+    <div class="card-detail">
+        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
+        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
+        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
+        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
+    </div>
+    <div class="card-price">
+        <p><sup>€</sup>280<sub></sub></p>
+    </div>
+    <a href="mailto:de.luycker.seppe@icloud.com?subject= Ultra Video Pack  &body= I want the Ultra Video Pack"><button class="card-button">contact me</button></a>
+ </div>
+ 
+</section>
+           
+</div>
 </div>
 <!-- ----------portfolio------------ -->
 <div id="portfolio">
@@ -103,17 +199,17 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/work-1.png">
+                <img src="images/BMW P-4.jpg">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <h3>Profesional Photo's</h3>
+                    <p></p>
                     <a href="#"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-2.png">
+                <img src="imagegs/work-2.pn">
                 <div class="layer">
-                    <h3>Music App</h3>
+                    <h3></h3>
                     <p>The app connects you yo the talented people around the world. Download it from play store.</p>
                     <a href="#"><i class="fas fa-external-link-alt"></i></a>
                 </div>
@@ -158,7 +254,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright © Kevin. Made wtih <i class="fas fa-heart"></i> by <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1">Easy Tutorials</a></p>
+        <p>Copyright © SDL Photography 2023  </p>
     </div>
 </div>
 
@@ -212,5 +308,6 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+ 
 </body>
 </html>
