@@ -4,17 +4,43 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+#icon{
+    width:  30px;
+    cursor: pointer;
+    align-items: center;
+}
+
+ @media (prefers-color-scheme: light) {
+    body, html {
+ transition: 0.50s;
+    --primary-color: #ffffff;
+    --secondary-collor: #000000;
+    --tertiary-collor: #d2d2d2;
+    --quaternary-collor:#363535;
+    --primary-background: url(images/BMW\ DAY\ 1.jpg);
+    }
+} @media (prefers-color-scheme: dark) {
+    body, html {
+        transition: 0.50s;
+        --primary-color: #000000;
+        --secondary-collor: #ffffff;
+        --tertiary-collor: #252525;
+        --quaternary-collor:#d5d5d5;
+        --primary-background: url(images/BMW\ NIGHT\ \ 1.jpg);
+    }
+}
+
 html{
     scroll-behavior: smooth;
 }
 body{
-    background: #080808;
-    color: #fff;
+    background: var(--primary-color);
+    color: #ffffff;
 } 
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/BMW\ NIGHT\ \ 1.jpg);
+    background-image: var(--primary-background);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -46,7 +72,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: var(--secondary-collor);
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -82,7 +108,7 @@ nav ul li a:hover::after{
 /* -----------about--------------- */
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: var(--secondary-collor);
 }
 .row{
     display: flex;
@@ -104,7 +130,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color:var(--secondary-collor);
 }
 
 .tab-titles{
@@ -170,8 +196,8 @@ nav ul li a:hover::after{
  justify-content: center;
  width: 390px;
  height: 400px;
- background-color: #262626; 
- color: rgb(254, 254, 254);
+ background-color: var( --tertiary-collor); 
+ color: var(--secondary-collor);
  border-radius: 20px;
  box-shadow: 0 5px 14px rgba(255, 255, 255, 0.25), 0 5px 5px rgba(0, 0, 0, 0, 0.22);
  padding: 2rem;
@@ -201,7 +227,7 @@ nav ul li a:hover::after{
  .card-detail > p{
     padding: 0.6rem 1.5rem;
     font-size: 0.8rem;
-    border-bottom: 1px solid #d5d5d5;
+    border-bottom: 1px solid var(--quaternary-collor);
  } .check{
     color: #00ff15;
  }
@@ -226,7 +252,7 @@ nav ul li a:hover::after{
     padding: 0.6rem 3rem ;
     border: 2px solid #ff004f;
     background-color: #ff004f;
-    color: #fff;
+    color: var(--secondary-collor);
     border-radius: 20px;
     cursor: pointer;
     transition: all 50ms  ease-in;
@@ -286,7 +312,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: var(--secondary-collor);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -306,7 +332,7 @@ nav ul li a:hover::after{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color:var(--secondary-collor);
     transition: background 0.5s;
 }
 .btn:hover{
@@ -357,7 +383,7 @@ form input, form textarea{
     background: #262626;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: var(--secondary-collor);
     font-size: 18px;
     border-radius: 6px;
 }
