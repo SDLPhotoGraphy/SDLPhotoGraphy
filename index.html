@@ -1,299 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDL PhotoGraphy</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<div id="header">
-    <div class="container">
-      
-        <nav >
-            <img src="images/sdl PhotoGraphy  Logo .png" class="logo">
-            <div id="fixed">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-                
-            </ul>
+
+    <!-- header design -->
+    <header class="header">
+     <img src="images/sdl PhotoGraphy  Logo .png" class="logo">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        
+        <nav class="navbar">
            
-        </div>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
-        <div class="header-text">
+    </header>
+   
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>HI</h3>
             
-            <h1> I'm <span>SDL Photography</span><br></h1>
-            <p>PhotoGraphy VideoGraphy Video&Photo - Editing
-            </p>
-        </div>
-    </div>
-</div>
-<!-- -----------about---------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/bmw 6.jpg">
+            <h3> I'm  <span class="multiple-text"></span></h3>
+            <p>PhotoGraphy VideoGraphy Video&Photo - Editing</p>
+            <div class="social-media">
+                
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About me</h1>
-                <p>Hi, im seppe, 19 years old. 
+            
+        </div>
 
+      
+    </section>
 
-                </p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">gear</p>
-                    <p class="tab-links" onclick="opentab('experience')">experience</p>
-                    <p class="tab-links" onclick="opentab('education')">sdl</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Camera</span><br>Sony a7sIII</li>
-                        <li><span>Lens-1</span><br>Tamron - 28-75mm F/2.8 Di III RXD,</li> 
-                         <li><span>Lens-2</span><br>Sony - FE 24mm F/1.4 GM,</li>
-                        <li><span>Gimbal</span><br>DJI Rs3,</li>
-                        <li><span>Action Cam</span><br>GoPro Hero 10,</li>
-                        <li><span>Drone</span><br>DJI mini 2,</li>
-                        <li><span>PC</span><br>14" MBP M1 Max,</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>sdl</span><br>working on it greetings  SDL.</li>
-                        <li><span>sdl</span><br>working on it greetings  SDL.</li>
-                        <li><span>sdl</span><br>working on it greetings  SDL.</li>
-                        <li><span>sdl</span><br>working on it greetings  SDL.</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>sdl</span><br>working on it greetings  SDL.</li>
-                        <li><span>sdl</span><br>working on it greetings  SDL.</li>
-                        <li><span>sdl</span><br>working on it greetings  SDL.</li>
-                    </ul>
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/bmw 6.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>Hi, im seppe, 19 years old. 
+        
+        
+                        </p>
+        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">gear</p>
+                            <p class="tab-links" onclick="opentab('experience')">experience</p>
+                            <p class="tab-links" onclick="opentab('education')">sdl</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Camera</span><br>Sony a7sIII</li>
+                                <li><span>Lens-1</span><br>Tamron - 28-75mm F/2.8 Di III RXD,</li> 
+                                 <li><span>Lens-2</span><br>Sony - FE 24mm F/1.4 GM,</li>
+                                <li><span>Gimbal</span><br>DJI Rs3,</li>
+                                <li><span>Action Cam</span><br>GoPro Hero 10,</li>
+                                <li><span>Drone</span><br>DJI mini 2,</li>
+                                <li><span>PC</span><br>14" MBP M1 Max,</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>sdl</span><br>working on it greetings  SDL.</li>
+                                <li><span>sdl</span><br>working on it greetings  SDL.</li>
+                                <li><span>sdl</span><br>working on it greetings  SDL.</li>
+                                <li><span>sdl</span><br>working on it greetings  SDL.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>sdl</span><br>working on it greetings  SDL.</li>
+                                <li><span>sdl</span><br>working on it greetings  SDL.</li>
+                                <li><span>sdl</span><br>working on it greetings  SDL.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- ---------services---------------- -->
-<div id="services">
-    <div class="container"> 
-        <h1 class="sub-title">My Prices</h1>
-    </div>
-    
-     
-            <div id="prices"></div>
+        </div>
 
         
-<section class="pricing">
- <div class="card-wrapper">
-    <!---card header-->
-    <div class="card-header">
-        <img src="">
-        <h2>Photo Basic Pack</h2>
-    </div>
-    <!---card detail-->
-    <div class="card-detail">
-        <p><span class="fas fa-check check"></span>   <b>5</b> Photo's </p>
-        <p><span class="fas fa-check check"></span>  <b></b> Color Corection </p>
-        <p><span class="fas fa-times nocheck"></span> <b></b> Photoshop</p>
-        <p><span class="fas fa-times nocheck"></span> <b></b> Raw photo's</p>
-    </div>
-    <!---card price-->
-    <div class="card-price">
-        <p><sup>€</sup>50 <sub> </sub></p>
-    </div>
-    <!---card-button-->
-    <a href="mailto:de.luycker.seppe@icloud.com?subject= Basic Photo Pack  &body= I want the Basic Photo Pack"><button class="card-button">contact me</button></a>
- </div> 
+    </section>
 
- <div class="card-wrapper">
-    <div class="card-header">
-        <img src="">
-        <h2>Photo Pro Pack</h2>
-    </div>
-    <div class="card-detail">
-        <p><span class="fas fa-check check"></span> <b>10</b> Photo's</p>
-        <p><span class="fas fa-check check"></span> <b>Pro</b> Color Corection</p>
-        <p><span class="fas fa-check check"></span> <b>Basic </b> photoshop </p>
-        <p><span class="fas fa-times nocheck"></span> <b></b> Raw Photo's</p>
-    </div>
-    <div class="card-price">
-        <p><sup>€</sup>80<sub></sub></p>
-    </div>
-    <a href="mailto:de.luycker.seppe@icloud.com?subject= pro Photo Pack  &body= I want the pro Photo Pack"><button class="card-button">contact me</button></a>
- </div>
- <div class="card-wrapper">
-    <div class="card-header">
-        <img src="">
-        <h2>Photo Ultra Pack</h2>
-    </div>
-    <div class="card-detail">
-        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
-        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
-        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
-        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
-    </div>
-    <div class="card-price">
-        <p><sup>€</sup>130<sub></sub></p>
-    </div>
-    <a href="mailto:de.luycker.seppe@icloud.com?subject= Ultra Photo Pack  &body= I want the Ultra Photo Pack"><button class="card-button">contact me</button></a>
- </div>
- <div class="card-wrapper">
-    <div class="card-header">
-        <img src="">
-        <h2>Video Basic Pack</h2>
-    </div>
-    <div class="card-detail">
-        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
-        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
-        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
-        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
-    </div>
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
 
-    <div class="card-price">
-        <p><sup>€</sup>130<sub></sub></p>
-    </div>
-    <a href="mailto:de.luycker.seppe@icloud.com?subject= Basic Video Pack  &body= I want the Basic Video Pack"><button class="card-button">contact me</button></a>
- </div>
- <div class="card-wrapper">
-    <div class="card-header">
-        <img src="">
-        <h2>Video Pro Pack</h2>
-    </div>
-    <div class="card-detail">
-        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
-        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
-        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
-        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
-    </div>
-    <div class="card-price">
-        <p><sup>€</sup>180<sub></sub></p>
-    </div>
-    <a href="mailto:de.luycker.seppe@icloud.com?subject= Pro video Pack  &body= I want the Pro video Pack"><button class="card-button">Order Now</button></a>
- </div>
- <div class="card-wrapper">
-    <div class="card-header">
-        <img src="">
-        <h2>Video Ultra Pack</h2>
-    </div>
-    <div class="card-detail">
-        <p><span class="fas fa-check check"></span> <b> 15</b> Photo's</p>
-        <p><span class="fas fa-check check"></span> <b> Pro</b> color corection </p>
-        <p><span class="fas fa-check check"></span> <b> Max</b> Photoshop</p>
-        <p><span class="fas fa-check check"></span> <b> </b> Raw Photo's</p>
-    </div>
-    <div class="card-price">
-        <p><sup>€</sup>280<sub></sub></p>
-    </div>
-    <a href="mailto:de.luycker.seppe@icloud.com?subject= Ultra Video Pack  &body= I want the Ultra Video Pack"><button class="card-button">contact me</button></a>
- </div>
- 
-</section>
-           
-</div>
-</div>
-<!-- ----------portfolio------------ -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/BMW P-4.jpg">
-                <div class="layer">
-                    <h3>Profesional Photo's</h3>
-                    <p></p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+        <div class="services-container">
+            <div class="services-box">
+                
+                <div class="card-wrapper">
+                    <!---card header-->
+                    <div class="card-header">
+                        <img src="">
+                        <h3>Photo Basic Pack</h3>
+                    </div>
+                    <!---card detail-->
+                    <div class="card-detail">
+                        <p><span class="fas fa-check check"></span>   <b>5</b> Photo's </p>
+                        <p><span class="fas fa-check check"></span>  <b></b> Color Corection </p>
+                        <p><span class="fas fa-times nocheck"></span> <b></b> Photoshop</p>
+                        <p><span class="fas fa-times nocheck"></span> <b></b> Raw photo's</p>
+                    </div>
+                    <!---card price-->
+                    <div class="card-price">
+                        <p><sup>€</sup>50 <sub> </sub></p>
+                    </div>
+                    <!---card-button-->
+                    <a href="mailto:de.luycker.seppe@icloud.com?subject= Basic Photo Pack  &body= I want the Basic Photo Pack"><button class="btn">contact me</button></a>
+                 </div>
+             
+            </div>
+
+            <div class="services-box">
+             
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi
+                    non laborum nisi alias iusto voluptatibus.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi
+                    non laborum nisi alias iusto voluptatibus.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/BMW DARK 1 (Version 2).jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>SDL</h4>
+                    <p>WORKING ON IT </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <div class="work">
-                <img src="images/BMW 5.jpg">
-                <div class="layer">
-                    <h3></h3>
-                    <p> working on it greetings  SDL.</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            <div class="portfolio-box">
+                <img src="images/BMW DARK 1 (Version 2).jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>SDL</h4>
+                    <p>WORKING ON IT </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <div class="work">
-                <img src="images/Peugeot P - 10.jpg">
-                <div class="layer">
-                    <h3>working on it greetings  SDL.</h3>
-                    <p>working on it greetings  SDL.</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            <div class="portfolio-box">
+                <img src="images/BMW DARK 1 (Version 2).jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>SDL</h4>
+                    <p>WORKING ON IT </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/BMW DARK 1 (Version 2).jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>SDL</h4>
+                    <p>WORKING ON IT </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/BMW 218I GRAND COUPE.mp4" alt="">
+                <div class="portfolio-layer">
+                    <h4>SDL</h4>
+                    <p>WORKING ON IT</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/BMW 5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>SDL</h4>
+                    <p>WORKING ON IT</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/BMW P-3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>SDL</h4>
+                    <p>WORKING ON IT</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/Peugeot P - 10.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>SDL</h4>
+                    <p>WORKING ON IT</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/BMW P-4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>SDL</h4>
+                    <p>WORKING ON IT</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
-    </div>
-</div>
-<!-- ----------contact------------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fas fa-paper-plane"></i> de.luycker.seppe@icloud.com</p>
-                <p><i class="fas fa-phone-square-alt"></i> 0498712057</p>
-                <div class="social-icons">
-                    
-                    <a href=""><i class="fab fa-twitter-square"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    
-                </div>
-                
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
             </div>
-            <div class="contact-right">
-                
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023  Sdl PhotoGraphy| All Rights Reserved.</p>
         </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © SDL Photography 2023  </p>
-    </div>
-</div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
 
 
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-<script>
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+    <script>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-</script>
-
-<script>
-
-    var sidemeu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemeu.style.right = "0";
-    }
-    function closemenu(){
-        sidemeu.style.right = "-200px";
-    }
-
-</script>
-
- 
+    
+    </script>
 </body>
+
 </html>
