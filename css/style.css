@@ -18,7 +18,7 @@
         --text-color: #000000;
         --main-color: #ff004f;
         --primary-background: url(images/BMW\ DAY\ 1.jpg);
-        --quaternary-collor:#d5d5d5;
+        --quaternary-collor:#1b1b1b;
          
     }
 }
@@ -173,6 +173,12 @@ span {
     box-shadow: none;
 }
 /* -----------about--------------- */
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+
 
 .about {
     display: flex;
@@ -181,7 +187,10 @@ span {
     gap: 2rem;
     background: var(--second-bg-color);
 }
-
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
 .about-img img {
     width: 35vw;
 }
@@ -190,6 +199,7 @@ span {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 .about-col-1{
     flex-basis: 35%;
@@ -202,10 +212,15 @@ span {
     flex-basis: 60%;
 }
 
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color:var(--secondary-collor);
+
+.services-container .services-box {
+    flex: 1 1 30rem;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
 }
 
 .tab-titles{
@@ -256,14 +271,27 @@ span {
     margin-bottom: 5rem;
 }
 
-
+.card-price{
+    
+    align-items: center;
+    margin: 1rem;
+   }
+   .card-price > p {
+       font-size: 2rem;
+       font-weight: 800;
+   } .card-price > p > sup,
+   .card-price > p > sub {
+       font-size: 5rem;
+   
+   }
 .card-detail > p{
     padding: 0.6rem 1.5rem;
-    font-size: 0.8rem;
+    font-size: 50rem;
     border-bottom: 1px solid var(--quaternary-collor);
  }
  
-.services-container {
+ 
+.services-container,.modal-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,6 +328,7 @@ span {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+
 /* -------portfolio----------- */
 .portfolio {
     background: var(--second-bg-color);
@@ -585,4 +614,65 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
+}
+
+
+
+
+.menu-box {
+    position: relative;
+    height: 350px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-viewer {
+   
+    
+    transition: .8s;
+    cursor: pointer;
+  
+}
+
+.menu {
+    box-shadow: 0px 0px 5px 0px #dcdcdc;
+    background-color: #fa0000;
+    height: fit-content;
+    top: 0px;
+    left: 50%;
+    padding: 10px;
+    transform: translateX(-50%) scale(0);
+    position: absolute;
+    transition: .7s;
+    width: 200px;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+
+
+.menu ul li {
+    width: 100%;
+    list-style-type: none;
+}
+
+
+.menu ul li a {
+    width: 100%;
+    text-decoration: none;
+    padding: 5px;
+    line-height: 40px;
+    display: flex;
+}
+
+.menu ul li a span.text {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.menu-box.menu-toggler .menu{
+    transform: translateX(-50%) scale(1);
 }
