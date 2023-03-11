@@ -370,19 +370,31 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+        <form action="https://script.google.com/macros/s/AKfycbzdN5sxsPyNEx_x0MmvFFgvVNAnhaVcQhb6KHVrwuFls0TKZksInMRcU6Zah3Z8il-X/exec" method="POST">
+            
+               <div class="input-box"> 
+                
+                <input type="text" name="name" placeholder="Name ">
+                <input type="email" name="email" placeholder="email" >
+                </div>
+
+                <div class="input-box">
+                <input type="number" name="number" placeholder="Phone ">
+                <input type="text" name="Subject" placeholder="Subject">
+                </div> 
+            
+                <div class="input-box"> 
+                <textarea name="Message"  placeholder="Your Message"></textarea>
+                </div>
+            
+               <input type="submit" value="Send Message" class="btn">
+       
         </form>
+
+        
     </section>
+   
+ 
 
     <!-- footer design -->
     <footer class="footer">
@@ -404,23 +416,7 @@
 
     <!-- custom js -->
     <script src="js/script.js"></script>
-    <script>
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-    
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    
-    </script>
     
 </body>
 
