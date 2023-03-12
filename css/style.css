@@ -19,7 +19,9 @@
         --main-color: #ff004f;
         --primary-background: url(images/BMW\ DAY\ 1.jpg);
         --quaternary-collor:#1b1b1b;
-         
+        --invert: invert(100%);
+        --Backgroundphone: url(images/home.jpg);
+        
     }
 }
 
@@ -31,7 +33,9 @@
         --main-color: #ff004f;
         --primary-background: url(images/BMW-NIGHT-1.jpg);
         --quaternary-collor:#d5d5d5;
-       
+       --invert: invert(0%);
+       --Backgroundphone: url(images/bmw\ website\ dark.jpg);
+    
     }
 }
 
@@ -46,6 +50,9 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
 
+}
+.Hometext{
+    color: white;
 }
 
 section {
@@ -72,9 +79,13 @@ section {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
 
-.logo {
+
+
+.logo{
     width: 80px;
     size: 200px;
+    opacity: 100;
+    filter:  var( --invert)
 }
 
 .navbar a {
@@ -550,7 +561,15 @@ span {
     }
 
     .home {
-        flex-direction: column;
+        display: center;
+        
+    }
+    .home {
+        display: flex;
+      
+        align-items: center;
+        background-image: var(--Backgroundphone);
+        background-size: cover;
     }
 
     .home-content h3 {
