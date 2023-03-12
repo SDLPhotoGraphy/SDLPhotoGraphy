@@ -531,7 +531,7 @@ span {
         padding: 2rem 3%;
     }
 } 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     #menu-icon {
         display: block;
     }
@@ -619,6 +619,7 @@ span {
     #menu-icon {
         display: block;
     }
+    
 
     .navbar {
         position: absolute;
