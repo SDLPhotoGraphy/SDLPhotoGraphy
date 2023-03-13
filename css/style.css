@@ -349,7 +349,7 @@ span {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 40px 20px 0 20px;
+    margin: 40px 10px 0 20px;
   }
   
   .container .heading{
@@ -369,12 +369,13 @@ span {
   .container .box .dream{
     display: flex;
     flex-direction: column;
-    width: 32.5%;
+    width: 31.5%;
+    
   }
   
   .container .box .dream img{
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 31px;
     border-radius: 20px;
   }
   
@@ -395,19 +396,11 @@ span {
 
   .wrapper{
     max-width: 1100px;
-    
+
     
   }
   
 
-  
-  .gallery .image span{
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    
-    
-  }
   .gallery .image img{
     
     width: 100%;
@@ -422,29 +415,32 @@ span {
   }
   
   .preview-box{
+    border-radius: 20px;
     position: fixed;
     top: 53%;
     left: 50%;
     size: 100%;
     transform: translate(-50%, -50%) scale(0.9);
     background: var(--second-bg-color);
-    max-width: 500px;
+    max-width: 495px;
     width: 100%;
     z-index: 5;
     opacity: 0;
     pointer-events: none;
     border-radius: 20px;
-    padding: 0 5px 5px 5px;
+    padding: 0 10px 10px 10px;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
   }
   .preview-box.show{
+    
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     
   }
   .preview-box .details{
+    
     display: flex;
     align-items: center;
     padding: 15px 25px 12px 10px;
@@ -462,7 +458,7 @@ span {
     font-weight: 500;
   }
   .details .icon{
-    color: #007bff;
+    color: var(--text-color);
     font-size: 20px;
     cursor: pointer;
   }
