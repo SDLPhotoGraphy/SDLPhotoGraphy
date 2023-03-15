@@ -233,16 +233,16 @@ span {
     
 }
 .tab-links{
-    margin-right: 10px;
-    margin: 15px;
-    padding-top: 30px;
+    
+    margin: 20px;
+    padding-top: 25px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
 }
 .tab-links::after{
-    
+   
     content: '';
     width: 0;
     height: 3px;
@@ -264,11 +264,11 @@ span {
     margin: 13px 0;
 }
 .tab-contents ul li span{
-    color: #ff0051;
-    font-size: 23px;
+    color: #ff004f;
+    font-size: 18px;
 }
 .tab-contents{
-    font-size: 17px;
+    font-size: 14px;
     
 }
 
