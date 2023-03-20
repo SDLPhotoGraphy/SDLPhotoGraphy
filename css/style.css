@@ -337,6 +337,15 @@ font-size: 15px;
   .text.show-more .dots {
     display: none;
   }
+  .aboutrel{
+    color: var(--text-color);
+    font-weight: 800;
+    align-items: center;
+    font-size: 20px;
+  }
+ .text202{
+    color: var(--text-color);
+ }
 
  
   
