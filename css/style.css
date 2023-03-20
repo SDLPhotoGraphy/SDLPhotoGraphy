@@ -38,7 +38,10 @@
     
     }
 }
-
+.logobar{
+   
+    filter:  var( --invert);
+}
 
 html {
     font-size: 62.5%;
@@ -85,7 +88,7 @@ section {
 .logo{
     width: 70px;
     size: 200px;
-    filter:  var( --invert)
+    filter:  var( --invert);
 }
 
 .navbar a {
