@@ -2,13 +2,16 @@
 <html lang="en">
 
 <head>
-    <link class="logobar" rel="shortcut icon" type="x-icon" href="images/sdl PhotoGraphy  Logo  smal.png">
+    <link class="logobar" rel="shortcut icon" type="x-icon" href="images/sdlPhotographyLogoSmall.png">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-17FHN69MZY"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-17FHN69MZY');
@@ -17,7 +20,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDL PhotoGraphy</title>
+    <title>SDL Photography</title>
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -25,80 +28,459 @@
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Add your other CSS and JavaScript files here -->
 </head>
 
 <body>
-    <!-- Your existing HTML code remains the same -->
 
-    <!-- Services Section -->
+    <!-- header-->
+    <header class="header">
+        <img src="images/sdlPhotographyLogo142750.png" class="logo">
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3 class="Hometext">HI</h3>
+
+            <h3 class="Hometext">I'm <span class="multiple-text"></span></h3>
+            <p class="Hometext">Photography - Videography - Video & Photo - Editing</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/sdl__photography/"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://twitter.com/_SDL__"><i class='bx bxl-twitter'></i></a>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- about section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <h2 class="heading">About <span>SDL</span></h2>
+            <img src="images/about.png" alt="">
+            <div class="container2">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/bmw6.jpg">
+                    </div>
+
+                    <div class="about-col-2">
+
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">My Gear</p>
+                            <p class="tab-links" onclick="opentab('experience')">My Experiences</p>
+                            <p class="tab-links" onclick="opentab('education')">My Offers</p>
+
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Camera</span><br>Sony a7sIII,</li>
+                                <li><span>Lens</span><br>Tamron - 28-75mm F/2.8 Di III RXD,</li>
+                                <li><span>Gimbal</span><br>DJI Rs3,</li>
+                                <li><span>Action Cam</span><br>GoPro Hero 10,</li>
+                                <li><span>Drone</span><br>DJI mini 3 Pro,</li>
+                                <li><span>PC</span><br>14" MBP M1 Max,</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>After Effects</span><br>In After Effects, I have around 4 years of experience!</li>
+                                <li><span>Premiere Pro</span><br>Most of my normal edited videos I do in Premiere Pro.
+                                    My experience with it is also around 4 years!</li>
+                                <li><span>Final Cut Pro</span><br>I have around 3 months of experience with Final Cut Pro!</li>
+                                <li><span>Photoshop</span><br>I have worked a lot in Photoshop and have been using it for around 4 years!</li>
+                                <li><span>Lightroom</span><br>In Lightroom, I have 3 years of experience!</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Photography</span><br>I offer photography (mostly cars, but I can also do other things)</li>
+                                <li><span>Video</span><br>I also offer videography, mostly car B-Roll, and car edits. But if you want something different, just contact me!</li>
+                                <li><span>Video Editing</span><br>I also offer video editing services. Contact me for more information!</li>
+                                <li><span>Photo Editing</span><br>If you want me to edit your photos, then contact me for more information!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- services section -->
     <section class="services" id="services">
+
+
+
         <h2 class="heading">My <span>Services</span></h2>
 
         <div class="services-container">
-            <!-- Your existing Photo/Video - Packs Info section remains the same -->
-
-            <!-- Photo Packs -->
-            <!-- Your existing Photo Packs code remains the same -->
-
-            <!-- Video Packs -->
             <div class="services-box">
-                <div class="card-wrapper">
-                    <div class="card-header">
-                        <h3>Video Basic Pack</h3>
-                    </div>
-                    <div class="card-detail">
-                        <p><b>1-2 minutes</b> video</p>
-                        <p><b>Basic transitions</b></p>
-                        <p><b>Background music</b></p>
-                        <p><b>No color grading</b></p>
-                    </div>
-                    <div class="card-price">
-                        <p><sup>€</sup>85 <sub></sub></p>
-                    </div>
-                    <a href="mailto:de.luycker.seppe@icloud.com?subject=Basic Video Pack&body=">
-                        <button class="btn">Contact Me</button>
-                    </a>
-                </div>
-                <div class="card-wrapper">
-                    <div class="card-header">
-                        <h3>Video Standard Pack</h3>
-                    </div>
-                    <div class="card-detail">
-                        <p><b>2-4 minutes</b> video</p>
-                        <p><b>Transitions and effects</b></p>
-                        <p><b>Background music</b></p>
-                        <p><b>Basic color grading</b></p>
-                    </div>
-                    <div class="card-price">
-                        <p><sup>€</sup>150 <sub></sub></p>
-                    </div>
-                    <a href="mailto:de.luycker.seppe@icloud.com?subject=Standard Video Pack&body=">
-                        <button class="btn">Contact Me</button>
-                    </a>
-                </div>
-                <!-- Add other Video Packs here if needed -->
+                <i class="bx bx-image"><i class="bx bx-video"></i></i>
+                <h3>Photo/Video - Packs Info</h3>
+                <p>Press the <span>Read More</span> button to see information about the packs!</p>
+                <p class="text"><span class="dots"> ...</span> <span class="moreText">
+                        <span class="aboutrel">About Relocation Costs</span><br>
+                        The first 20km are free. If the location where you want photos/videos is over 20km, then there will be travel costs of €0.40 per km. During a photo/video shoot, you can choose to go to multiple locations. Some packs include multiple locations. If 1 location is included, we will discuss it together. If 2 or more locations are included, we will agree on several locations to take different photos/videos (this must be within 10 km of the first agreed location). If it's further than 10km, travel costs will be added again - €0.40 per km. With the video - Max & Ultra packs, travel costs will only be charged if it's further than 30km.
+
+                        <span class="aboutrel">About Photo/Video Packs</span><br>
+                        I put together the packs on my website myself. If you want something else, feel free to contact me, and I will make a custom quote.
+
+                        <span class="aboutrel">About Video/Photo - Rolling Shots</span><br>
+                        If you want rolling shots in the cheaper packs, I will ask for €20 once, and then €10 per rolling shot. Rolling shots are included in the more expensive packs. If you would like more information about rolling shots, be sure to contact me!
+                    </span>
+                </p>
+                <button class="read-more-btn">Read More</button>
             </div>
         </div>
+
+        <!-- services Photo Packs -->
+
+        <div class="services-container">
+
+            <div class="services-box">
+
+                <div class="card-wrapper">
+
+                    <!---card header-->
+                    <div class="card-header">
+
+
+                        <h3>Photo Basic Pack</h3>
+                    </div>
+                    <!---card detail-->
+                    <div class="card-detail">
+                        <p><b>16</b> Photos</p>
+                        <p><b>Color Correction/Grading</b></p>
+                        <p><b>+ 2</b> Rolling Shots</p>
+                        <p><b>2</b> Locations Included</p>
+                    </div>
+                    <!---card price-->
+                    <div class="card-price">
+                        <p><sup>€</sup>55<sub></sub></p>
+                    </div>
+                    <!---card-button-->
+                    <a href="mailto:de.luycker.seppe@icloud.com?subject=Basic Photo Pack&body="><button class="btn">Contact Me</button></a>
+                </div>
+            </div>
+            <!-- services Photo Pack Pro -->
+
+            <div class="services-box">
+                <div class="card-wrapper">
+                    <!---card header-->
+                    <div class="card-header">
+                        <img src="">
+                        <h3>Photo Pro Pack</h3>
+                    </div>
+                    <!---card detail-->
+                    <div class="card-detail">
+                        <p><b>26</b> Photos</p>
+                        <p><b>Color Correction/Grading</b></p>
+                        <p><b>+ 4</b> Rolling Shots</p>
+                        <p><b>4</b> Locations Included</p>
+                    </div>
+                    <!---card price-->
+                    <div class="card-price">
+                        <p><sup>€</sup>85<sub></sub></p>
+                    </div>
+                    <!---card-button-->
+                    <a href="mailto:de.luycker.seppe@icloud.com?subject=Photo Pro Pack&body="><button class="btn">Contact Me</button></a>
+                </div>
+            </div>
+            <!-- services Photo Pack Max -->
+
+            <div class="services-box">
+                <div class="card-wrapper">
+
+                    <!---card header-->
+                    <div class="card-header">
+                        <img src="">
+                        <h3>Photo Max Pack</h3>
+                    </div>
+                    <!---card detail-->
+                    <div class="card-detail">
+                        <p><b>4-hour</b> Photo Shoot</p>
+                        <p><b>Color Correction/Grading</b></p>
+                        <p><b>+ 6</b> Rolling Shots</p>
+                        <p><b>7</b> Locations Included</p>
+
+                    </div>
+                    <!---card price-->
+                    <div class="card-price">
+                        <p><sup>€</sup>175<sub></sub></p>
+                    </div>
+                    <!---card-button-->
+                    <a href="mailto:de.luycker.seppe@icloud.com?subject=Photo Max Pack&body="><button class="btn">Contact Me</button></a>
+                </div>
+            </div>
+            <!-- services Photo Pack Ultra -->
+
+            <div class="services-box">
+                <div class="card-wrapper">
+                    <!---card header-->
+                    <div class="card-header">
+                        <img src="">
+                        <h3>Photo Ultra Pack</h3>
+                    </div>
+                    <!---card detail-->
+                    <div class="card-detail">
+                        <p><b>8-hour</b> Photo Shoot</p>
+                        <p><b>Color Correction/Grading</b></p>
+                        <p><b>20</b> Locations Included</p>
+                        <p><b>16</b> Rolling Shots</p>
+
+                    </div>
+                    <!---card price-->
+                    <div class="card-price">
+                        <p><sup>€</sup>550<sub></sub></p>
+                    </div>
+                    <!---card-button-->
+                    <a href="mailto:de.luycker.seppe@icloud.com?subject=Photo Ultra Pack&body="><button class="btn">Contact Me</button></a>
+                </div>
+            </div>
+            <!-- services Video Packs -->
+            <div class="services-box">
+                <div class="card-wrapper">
+                    <!---card header-->
+                    <div class="card-header">
+                        <img src="">
+                        <h3>Video Basic Pack</h3>
+                    </div>
+                    <!---card detail-->
+                    <div class="card-detail">
+                        <p><b>2</b> Videos (Cinematic Shots)</p>
+                        <p><b>Color Correction/Grading</b></p>
+                        <p><b>Basic Editing</b></p>
+                        <p><b>1</b> Location Included</p>
+                    </div>
+                    <!---card price-->
+                    <div class="card-price">
+                        <p><sup>€</sup>5<sub></sub></p>
+                    </div>
+                    <!---card-button-->
+                    <a href="mailto:de.luycker.seppe@icloud.com?subject=Video Basic Pack&body="><button class="btn">Contact Me</button></a>
+                </div>
+            </div>
+            <!-- services Video Pack Pro -->
+            <div class="services-box">
+                <div class="card-wrapper">
+                    <!---card header-->
+                    <div class="card-header">
+                        <img src="">
+                        <h3>Video Pro Pack</h3>
+                    </div>
+                    <!---card detail-->
+                    <div class="card-detail">
+                        <p><b>4</b> Short Cinematic Videos (At Your Choice)</p>
+                        <p><b>Color Correction/Grading</b></p>
+                        <p><b>Basic Editing</b></p>
+                        <p><b>4</b> Locations Included</p>
+                    </div>
+                    <!---card price-->
+                    <div class="card-price">
+                        <p><sup>€</sup>180<sub></sub></p>
+                    </div>
+                    <!---card-button-->
+                    <a href="mailto:de.luycker.seppe@icloud.com?subject=Video Pro Pack&body="><button class="btn">Contact Me</button></a>
+                </div>
+            </div>
+            <!-- services Video Pack Max -->
+
+            <div class="services-box">
+                <div class="card-wrapper">
+                    <!---card header-->
+                    <div class="card-header">
+                        <img src="">
+                        <h3>Video Max Pack</h3>
+                    </div>
+                    <!---card detail-->
+                    <div class="card-detail">
+                        <p><b>Small Professional Edited Video</p>
+                        <p><b>Color Correction/Grading</b></p>
+                        <p><b>+ Video Rolling Shots</p>
+                        <p><b>1</b> Half-Day Shoot</p>
+                    </div>
+                    <!---card price-->
+                    <div class="card-price">
+                        <p><sup>€</sup>650<sub></sub></p>
+                    </div>
+                    <!---card-button-->
+                    <a href="mailto:de.luycker.seppe@icloud.com?subject=Video Max Pack&body="><button class="btn">Contact Me</button></a>
+                </div>
+            </div>
+            <!-- services Video Pack Ultra -->
+
+            <div class="services-box">
+                <div class="card-wrapper">
+                    <!---card header-->
+                    <div class="card-header">
+                        <img src="">
+                        <h3>Video Ultra Pack</h3>
+                    </div>
+                    <!---card detail-->
+                    <div class="card-detail">
+                        <p><b>Full Professional Edited Video</p>
+                        <p><b>Color Correction/Grading</b></p>
+                        <p><b>+ Video Rolling Shots</p>
+                        <p><b>1</b> Full-Day Shoot</p>
+                    </div>
+                    <!---card price-->
+                    <div class="card-price">
+                        <p><sup>€</sup>950<sub></sub></p>
+                    </div>
+                    <!---card-button-->
+                    <a href="mailto:de.luycker.seppe@icloud.com?subject=Video Ultra Pack&body="><button class="btn">Contact Me</button></a>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
-    <!-- Your other sections remain the same -->
+    <!-- portfolio section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">My <span>Portfolio</span></h2>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <div class="contact-container">
-            <form action="contact_form.php" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+        <div class="portfolio-box">
+            <div class="container">
+
+                <div class="box">
+
+                    <!-- portfolio section Left -->
+                    <div class="dream">
+                        <div class="gallery">
+                            <div class="image"><span><img src="images/Casper - car 1.jpg" alt=""></span></div>
+                            <div class="image"><span><img src="images/bmw edit 7.jpg" alt=""></span></div>
+                            <div class="image"><span><img src="images/Comp 1.mp4" alt=""></span></div>
+                            <div class="image"><span><img src="images/sam - car 4.jpg" alt=""></span></div>
+                        </div>
+                    </div>
+
+                    <!-- portfolio section Middel -->
+                    <div class="dream">
+                        <div class="gallery">
+                            <div class="image"><span><img src="images/BMW DARK 1 (Version 2).jpg" alt=""></span></div>
+                            <div class="image"><span><img src="images/Tesla - model 3 performance.jpg" alt=""></span></div>
+                            <div class="image"><span><img src="images/DSC01697 copy.jpg" alt=""></span></div>
+                            <div class="image"><span><img src="images/tesla 3.jpg" alt=""></span></div>
+                            <div class="image"><span><img src="images/9.PNG" alt=""></span></div>
+                        </div>
+                    </div>
+
+                    <!-- portfolio section Right -->
+                    <div class="dream">
+                        <div class="gallery">
+                            <div class="image"><span><img src="images/BMW P-3.jpg" alt=""></span></div>
+                            <div class="image"><span><img src="images/BMW 218I GRAND COUPE.mp4" alt=""></span></div>
+                            <div class="image"><span><img src="images/Peugeot P - 10.jpg" alt=""></span></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- portfolio Preview box -->
+            <div class="preview-box">
+                <div class="details">
+                    <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+                    <span class="icon fas fa-times"></span>
+                </div>
+                <div class="image-box">
+                    <div class="slide prev"><i class="fas fa-angle-left"></i></div>
+                    <div class="slide next"><i class="fas fa-angle-right"></i></div>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="shadow"></div>
+
         </div>
     </section>
 
-    <!-- Your footer and other JavaScript code remain the same -->
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="https://script.google.com/macros/s/AKfycbzdN5sxsPyNEx_x0MmvFFgvVNAnhaVcQhb6KHVrwuFls0TKZksInMRcU6Zah3Z8il-X/exec" id="my-form" method="POST">
+
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-box">
+                <input type="number" name="number" placeholder="Phone">
+                <input type="text" name="Subject" placeholder="Subject">
+            </div>
+
+            <div class="input-box">
+                <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            </div>
+
+            <input type="submit" value="Send Message" class="btn">
+            <span id="msg"></span>
+
+        </form>
+
+        <script>
+            window.addEventListener("load", function () {
+                const form = document.getElementById('my-form');
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    const data = new FormData(form);
+                    const action = e.target.action;
+                    fetch(action, {
+                        method: 'POST',
+                        body: data,
+                    })
+                    .then(response => {
+                        msg.innerHTML = "Message sent";
+                        setTimeout(function () {
+                            msg.innerHTML = "";
+                        }, 2000);
+                        form.reset();
+                    })
+                    .catch(error => console.error('Error!', error.message));
+                });
+            });
+        </script>
+
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 SDL Photography</p>
+        </div>
+    </footer>
+
+    <!-- custom js file link -->
+    <script src="js/script.js"></script>
 
 </body>
 
 </html>
+
