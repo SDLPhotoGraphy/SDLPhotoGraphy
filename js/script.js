@@ -169,26 +169,3 @@ readMoreBtn.addEventListener("click", (e) => {
 
   
      
-
-
-
-
-
-
-
-
-  
-     
-
-
-
-
-
-
-
-
-
-
-
-  
-     
