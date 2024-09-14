@@ -19,7 +19,6 @@
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
-        <div id="menu-icon" class="menu-icon">☰</div>
         <button id="theme-toggle" class="theme-toggle">🌙</button>
     </header>
 
@@ -29,16 +28,15 @@
         <section id="home" class="home">
             <div class="home-content">
                 <h1>Welcome to SDL Visuals</h1>
-                <p>Your one-stop solution for stunning visuals.</p>
-                <a href="#contact" class="btn">Get in Touch</a>
+                <p>Creating stunning visuals with a creative touch.</p>
+                <a href="#contact" class="btn">Contact Us</a>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="about">
-            <h2>About Us</h2>
-            <p>We specialize in capturing the essence of technology, cars, and desk setups with a creative touch.</p>
-            <img src="path/to/about-image.jpg" alt="About Us">
+            <h2>About SDL Visuals</h2>
+            <p>SDL Visuals is dedicated to capturing and showcasing high-quality visuals in the realms of technology, automotive, and desktop setups. Our goal is to bring a unique perspective to each project.</p>
         </section>
 
         <!-- Services Section -->
@@ -46,19 +44,16 @@
             <h2>Our Services</h2>
             <div class="services-container">
                 <div class="service-box">
-                    <div class="icon">📸</div>
                     <h3>Photography</h3>
-                    <p>High-quality, professional photography for all your needs.</p>
+                    <p>Professional photography services to highlight the best aspects of your subject.</p>
                 </div>
                 <div class="service-box">
-                    <div class="icon">🎥</div>
                     <h3>Videography</h3>
-                    <p>Engaging video content to tell your story.</p>
+                    <p>High-quality video production to bring your vision to life.</p>
                 </div>
                 <div class="service-box">
-                    <div class="icon">🖥️</div>
                     <h3>Tech Reviews</h3>
-                    <p>In-depth reviews and showcases of the latest tech products.</p>
+                    <p>Detailed and engaging reviews of the latest technology products.</p>
                 </div>
             </div>
         </section>
@@ -66,26 +61,32 @@
         <!-- Portfolio Section -->
         <section id="portfolio" class="portfolio">
             <h2>Portfolio</h2>
-            <div class="portfolio-gallery">
+            <div class="portfolio-container">
+                <!-- Placeholder for portfolio items -->
                 <div class="portfolio-item">
-                    <img src="path/to/portfolio1.jpg" alt="Portfolio Item 1">
+                    <div class="portfolio-image"></div>
+                    <div class="portfolio-info">
+                        <h3>Project Title</h3>
+                        <p>Brief description of the project.</p>
+                    </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="path/to/portfolio2.jpg" alt="Portfolio Item 2">
-                </div>
-                <div class="portfolio-item">
-                    <img src="path/to/portfolio3.jpg" alt="Portfolio Item 3">
-                </div>
+                <!-- Repeat .portfolio-item as needed -->
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <h2>Contact Us</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <form id="contact-form" action="mailto:de.luycker.seppe@icloud.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
                 <button type="submit">Send Message</button>
             </form>
         </section>
