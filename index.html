@@ -1,551 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link class="logobar" rel="shortcut icon" type="x-icon" href="images/sdl PhotoGraphy  Logo  smal.png"  >
-   
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-17FHN69MZY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-17FHN69MZY');
-</script>
-<script src="https://kit.fontawesome.com/6066e08350.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDL PhotoGraphy</title>
-
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>SDL Visuals</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
- <!-- header-->
+    <!-- Header -->
     <header class="header">
-     <img src="images/sdl PhotoGraphy  Logo  14.27.50.png" class="logo">
-     
-        <i class='bx bx-menu' id="menu-icon"></i>
-        
+        <div class="logo">
+            <img src="path/to/logo.png" alt="SDL Visuals Logo">
+        </div>
         <nav class="navbar">
-           
-            <a href="#home" class="active">Home</a>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
+        <div id="menu-icon" class="menu-icon">☰</div>
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
     </header>
-    
-   
 
-<!-- home section -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3 class="Hometext">HI</h3>
-            
-            <h3 class="Hometext"> I'm  <span class="multiple-text"></span></h3>
-            <p class="Hometext" span>Photography | Videography | Video & Photo | Editing</p>
-            <div class="social-media">
-                <a href="https://www.instagram.com/sdl__photography/"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="https://twitter.com/_SDL__"><i class='bx bxl-twitter'></i></a>
-                
-
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <div class="home-content">
+                <h1>Welcome to SDL Visuals</h1>
+                <p>Your one-stop solution for stunning visuals.</p>
+                <a href="#contact" class="btn">Get in Touch</a>
             </div>
-            
-        </div>
+        </section>
 
-      
-    </section>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>We specialize in capturing the essence of technology, cars, and desk setups with a creative touch.</p>
+            <img src="path/to/about-image.jpg" alt="About Us">
+        </section>
 
-
-
-
-<!-- about section-->
-    <section class="about" id="about">
-        <div class="about-img">
-            <h2 class="heading">About <span>SDL </span></h2>
-            <img src="images/about.png" alt="">
-            <div class="container2">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/bmw 6.jpg">
-                    </div>
-                    
-                    <div class="about-col-2">
-                        
-                        
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">My Gear</p>
-                            <p class="tab-links" onclick="opentab('experience')">My Experiences</p>
-                            <p class="tab-links" onclick="opentab('education')"> My offers </p>
-                            
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Camera</span><br>Sony a7sIII,</li>
-                                <li><span>External Monitor</span><br> Ninja Atomos V</li>
-                                <li><span>Lens</span><br>Tamron - 28-75mm F/2.8 Di III RXD,</li> 
-                                <li><span>Gimbal</span><br>DJI Rs3,</li>
-                                <li><span>Action Cam</span><br>GoPro Hero 10,</li>
-                                <li><span>Drone</span><br>DJI mini 3 Pro,</li>
-                                <li><span>PC</span><br>14" MBP M1 Max,</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>After Effects </span><br> I have approximately 4 years of hands-on experience working with After Effects. Over these years, I have delved into the intricacies of the software, mastering various animation techniques, visual effects, and motion graphics. This extensive experience has allowed me to bring creativity and dynamism to my video projects, enhancing their overall quality and visual appeal. </li>
-                                <li><span>Premiere pro</span><br>most  Once again, I have approximately 4 years of experience using Premiere Pro for my video editing endeavors. This versatile software has been my go-to tool for crafting captivating and polished video content. Through the years, I have honed my skills in seamless transitions, precise timeline editing, and color correction, ensuring that each project meets the highest standards of excellence. Premiere Pro has been an indispensable part of my video production journey, enabling me to deliver compelling and professional results consistently.</li>
-                                <li><span>Final Cut Pro</span><br>I must mention that my experience with Final Cut Pro is relatively limited, as I have only been using it for about 3 months. However, during this time, I have been exploring its functionalities and learning to edit videos with it.</li>
-                                <li><span>PhotoShop</span><br>I have extensive experience working with Photoshop, and I believe I have been using the software for approximately 4 years. Over this period, I have gained proficiency in various tools and techniques, allowing me to create and manipulate images effectively.</li>
-                                <li><span>Lightroom</span><br>I also have 3 years of experience using Lightroom. Throughout this time, I have honed my skills in photo editing and enhancing, enabling me to bring out the best in every image. Lightroom has been an essential tool in my photography workflow, allowing me to achieve the desired artistic effects and produce stunning results.</li>
-                                
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>Photo</span><br>Once again, I offer photography services with a primary focus on capturing stunning images of cars. However, my expertise extends beyond automotive photography, and I am more than capable of producing captivating photographs across various subjects. Whether it's landscapes, portraits, events, or products, I approach each shoot with an artistic eye and a passion for creating visually engaging images. So, if you have any photography needs outside the realm of cars, don't hesitate to reach out, and I'll be thrilled to bring my skills to any project you have in mind.)</li>
-                                <li><span>Video</span><br> Additionally, I provide videography services, specializing in capturing dynamic car B-Roll footage and creating engaging car edits. However, I'm not limited to just car-related videos. If you have other videography requirements or ideas in mind, feel free to get in touch with me! I'm always excited to explore new creative opportunities and work on diverse video projects that align with your vision and needs. Your satisfaction is my top priority, and I'm committed to delivering high-quality videos that exceed your expectations. Let's collaborate and bring your video concepts to life! </li>
-                                <li><span>Video Edeting</span><br> Certainly! I also provide video editing services to enhance your footage and create captivating visual content. Whether you have raw video material that needs refining or existing footage that requires professional editing, I'm here to help. With my expertise in various editing software, including After Effects, Premiere Pro, and Final Cut Pro, I can bring your videos to the next level.
-
-Feel free to contact me for more details about my video editing services, including pricing, turnaround time, and specific editing styles. I'm eager to discuss your project requirements and tailor the editing process to suit your unique vision. Let's collaborate and make your videos stand out with seamless transitions, stunning effects, and polished storytelling. Get in touch, and let's create something extraordinary together! </li>
-                                <li><span>Photo Edeting</span><br>If you're interested in having your photos professionally edited, don't hesitate to reach out to me for more details! I offer photo editing services to enhance and transform your images into stunning works of art. Whether you have personal photographs, professional shots, or creative projects, I'm here to bring out the best in your visuals.
-
-Feel free to contact me, and we can discuss the specific editing requirements, pricing, and any other details you'd like to know. I take pride in delivering high-quality results that meet your expectations and bring your vision to life. Let's collaborate and turn your photos into captivating masterpieces. Don't hesitate to get in touch, and let's embark on this creative journey together!
-                        </div>
-                    </div>
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="services-container">
+                <div class="service-box">
+                    <div class="icon">📸</div>
+                    <h3>Photography</h3>
+                    <p>High-quality, professional photography for all your needs.</p>
+                </div>
+                <div class="service-box">
+                    <div class="icon">🎥</div>
+                    <h3>Videography</h3>
+                    <p>Engaging video content to tell your story.</p>
+                </div>
+                <div class="service-box">
+                    <div class="icon">🖥️</div>
+                    <h3>Tech Reviews</h3>
+                    <p>In-depth reviews and showcases of the latest tech products.</p>
                 </div>
             </div>
-        </div>
- 
-    </section>
+        </section>
 
-
-
-
-
-<!-- services section -->
-    <section class="services" id="services">
-        
-        
-        
-      
-        <h2 class="heading">My <span>Services</span></h2>
-
-</div>
-<div class="services-container">
-    <div class="services-box">
-        <i class="fa-regular fa-image"> <i class="fa-regular fa-video"></i></i>
-        <h3>Photo/video - Packs Info </h3>
-        <p> Pres de 
-           <span>read more</span>  To see detailed information about the packs, click on the "Read More" button. This button will provide you with additional information, descriptions, and pricing for the different packs available. Feel free to explore the options and choose the pack that best suits your needs. If you have any questions or need further clarification, don't hesitate to contact me. I'm here to assist you in making the right decision and ensuring you get the most out of the photography and videography services I offer. Click the "Read More" button now to discover the exciting details about each pack! </p>
-        <p class="text"><span class="dots"> ...</span> <span class="moreText"> 
-           <span class="aboutrel"> Travel Costs and Photo/Video Packs </span>
-           <br>
-
-           <span class="text202">
-              The first 20km of travel are free. If the location you desire for photos/videos is over 20km away, then there will be additional travel costs of €0.40 per kilometer.
-
-During a photo/video shoot, you have the option to choose multiple locations. Some packs already include multiple locations. If only one location is included, we will discuss and agree on that specific location together. However, if two or more locations are included, we will mutually decide on different locations within a 10km radius of the first agreed-upon location. If the additional locations are farther than 10km, travel costs of €0.40 per kilometer will be added again.<br>
-            
-            Some packs include multiple locations.
-            
-            So if 1 location is included this is the location we discuss together <br> if 2 or more locations are included. we agree on several locations to take different photos/videos <br> (this must be within 10 km of the first agreed location.) if this is further than 10km, travel costs will be added again - (€0.40 ) <br>
-            
-            For the video max&ultra packs, travel costs will only be charged if the location is beyond 30km. <br>
-            <span class="aboutrel"> About Photo/Video Packs </span> <br>
-
-             have personally created the packs on my website. However, if you have specific requirements or want something different, feel free to contact me, and I will provide you with a personalized quote. <br>
-
-            <span class="aboutrel">About Video/Photo - Rolling Shots </span> <br>
-
-
-
-
-
-           <br> If you opt for rolling shots in the cheaper packs, there will be a one-time charge of €20, along with €10 per additional rolling shot. In the more expensive packs, rolling shots are already included. <br>
-
-If you need more information about rolling shots, don't hesitate to get in touch with me!
-            <br>  
-
-
-
-
-        </span>
-
-</span></p>
-            <button class="read-more-btn">Read More</button>
-            
-       
-    </div>
-
- 
-<!-- services Photo Packs -->
-
-
-        <div class="services-container">
-            
-            <div class="services-box">
-            
-                <div class="card-wrapper">
-
-            
-                    <!---card header-->
-                    <div class="card-header">
-                        
-                        
-             
-                        <h3>Photo Basic Pack</h3>
-                    </div>
-                    <!---card detail-->
-                   
-                    <div class="card-detail">
-                        <p><b>16</b> Photo's </p>
-                        <p><b></b> Color Correction/grading </p>
-                        <p><b>+ 2</b> Roling shots</p>
-                        <p><b>2</b> Location included.  </p>
-                    </div>
-                    <!---card price-->
-                    <div class="card-price">
-                        <p><sup>€</sup>55 <sub> </sub></p>
-                    </div>
-                    <!---card-button-->
-                    <a href="mailto:de.luycker.seppe@icloud.com?subject= Basic Photo Pack  &body= "><button class="btn">contact me</button></a>,
-                 </div>
-            </div>
-<!-- services Photo Pack Pro -->
-
-            <div class="services-box">
-                <div class="card-wrapper">
-                    <!---card header-->
-                    <div class="card-header">
-                        <img src="">
-                        <h3>Photo Pro Pack</h3>
-                    </div>
-                    <!---card detail-->
-                    <div class="card-detail">
-                        <p><b>26</b> Photo's </p>
-                        <p><b></b> Color Correction/grading </p>
-                        <p><b>+ 4</b> Roling shots</p>
-                        <p><b>4</b> Locations included. </p>
-                    </div>
-                    <!---card price-->
-                    <div class="card-price">
-                        <p><sup>€</sup>85 <sub> </sub></p>
-                    </div>
-                    <!---card-button-->
-                    <a href="mailto:de.luycker.seppe@icloud.com?subject= Photo Pro Pack &body= "><button class="btn">contact me</button></a>
-                 </div>
-            </div>
-<!-- services Photo Pack Max -->
-
-            <div class="services-box">
-                <div class="card-wrapper">
-                    
-                    <!---card header-->
-                    <div class="card-header">
-                        <img src="">
-                        <h3>Photo Max Pack</h3>
-                    </div>
-                    <!---card detail-->
-                    <div class="card-detail">
-                        <p><b>4 hour</b> Photo shoot </p>
-                        <p><b></b> Color Correction/grading </p>
-                        <p><b>+ 6</b> Roling Shots</p>
-                        <p><b>7</b>  loctations included.</p>
-                        
-                    </div>
-                    <!---card price-->
-                    <div class="card-price">
-                        <p><sup>€</sup>175 <sub> </sub></p>
-                    </div>
-                    <!---card-button-->
-                    <a href="mailto:de.luycker.seppe@icloud.com?subject= Photo Max Pack  &body = "><button class="btn">contact me</button></a>
-                 </div>
-            </div>
-<!-- services Photo Pack Ultra -->
-
-            <div class="services-box">
-                <div class="card-wrapper">
-                    <!---card header-->
-                    <div class="card-header">
-                        <img src="">
-                        <h3>Photo Ultra Pack</h3>
-                    </div>
-                    <!---card detail-->
-                    <div class="card-detail">
-                        <p><b> 8 hour </b> Photo shoot </p>
-                        <p><b></b> Color Correction/grading </p>
-                        <p><b>20</b> locations included.</p>
-                        <p><b>16</b> roling shots. </p>
-
-                    </div>
-                    <!---card price-->
-                    <div class="card-price">
-                        <p><sup>€</sup>550 <sub> </sub></p>
-                    </div>
-                    <!---card-button-->
-                    <a href="mailto:de.luycker.seppe@icloud.com?subject= Photo Ultra Pack  &body = "><button class="btn">contact me</button></a>
-                 </div>
-            </div>
-<!-- services Video Packs -->   
-            <div class="services-box">
-                <div class="card-wrapper">
-                    <!---card header-->
-                    <div class="card-header">
-                        <img src="">
-                        <h3>Video Basic Pack</h3>
-                    </div>
-                    <!---card detail-->
-                    <div class="card-detail">
-                        <p><b>2</b> video's (Cinematic shot's) </p>
-                        <p><b></b> Color Corection/grading</p>
-                        <p><b></b> Basic Edeting </p>
-                        <p><b>1</b> location included. </p>
-                    </div>
-                    <!---card price-->
-                    <div class="card-price">
-                        <p><sup>€</sup>5 <sub> </sub></p>
-                    </div>
-                    <!---card-button-->
-                    <a href="mailto:de.luycker.seppe@icloud.com?subject= Video Basic Pack &body= "><button class="btn">contact me</button></a>
-                 </div>
-            </div>
-<!-- services Video Pack Pro -->
-            <div class="services-box">
-                <div class="card-wrapper">
-                    <!---card header-->
-                    <div class="card-header">
-                        <img src="">
-                        <h3>Video Pro Pack</h3>
-                    </div>
-                    <!---card detail-->
-                    <div class="card-detail">
-                        <p><b>4</b> Short Cinematic video's  (At Your Choice)   </p>
-                        <p><b></b> Color Corection/grading </p>
-                        <p><b></b> Basic Edeting</p>
-                        <p><b>4</b> Locations included</p>
-                    </div>
-                    <!---card price-->
-                    <div class="card-price">
-                        <p><sup>€</sup>180 <sub> </sub></p>
-                    </div>
-                    <!---card-button-->
-                    <a href="mailto:de.luycker.seppe@icloud.com?subject= Video Pro Pack  &body= "><button class="btn">contact me</button></a>
-                 </div>
-            </div>
-<!-- services Video Pack Max -->
-
-            <div class="services-box">
-                <div class="card-wrapper">
-                    <!---card header-->
-                    <div class="card-header">
-                        <img src="">
-                        <h3>Video Max Pack</h3>
-                    </div>
-                    <!---card detail-->
-                    <div class="card-detail">
-                        <p><b></b> Small Profesional edited video </p>
-                        <p><b></b> Color Corection/grading  </p>
-                        <p><b>+</b>  Video roling shot's </p>
-                        <p><b>1</b> half day shoot </p>
-                    </div>
-                    <!---card price-->
-                    <div class="card-price">
-                        <p><sup>€</sup>650<sub> </sub></p>
-                    </div>
-                    <!---card-button-->
-                    <a href="mailto:de.luycker.seppe@icloud.com?subject= Video Max Pack  &body= "><button class="btn">contact me</button></a>
-                 </div>
-            </div>
- <!-- services Video Pack Ultra -->
-
-            <div class="services-box">
-                <div class="card-wrapper">
-                    <!---card header-->
-                    <div class="card-header">
-                        <img src="">
-                        <h3>Video Ultra Pack</h3>
-                    </div>
-                    <!---card detail-->
-                    <div class="card-detail">
-                        <p><b></b> Full Profesional edited video. </p>
-                        <p><b></b> Color Corection/grading </p>
-                        <p><b>+</b> Video roling shot's </p>
-                        <p><b>1</b> Full day shoot </p>
-                    </div>
-                    <!---card price-->
-                    <div class="card-price">
-                        <p><sup>€</sup>950 <sub> </sub></p>
-                    </div>
-                    <!---card-button-->
-                    <a href="mailto:de.luycker.seppe@icloud.com?subject= Video Ultra Pack &body= "><button class="btn">contact me</button></a>
-                 </div>
-            </div>
-            
-        </div>
-      
-    </section>
-
-
-
-
-
-<!-- portfolio section -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">My <span>Portfolio</span></h2>
-
-     <div class="portfolio-box">
-         <div class="container">
- 
-        <div class="box">
-
-<!-- portfolio section  Left -->
-
-        <div class="dream" >
-          <div class="gallery">
-           <div class="image"><span><img src="images/Casper - car 1.jpg" alt=""></span></div>
-           <div class="image"><span><img src="images/bmw edit  7.jpg" alt=""></span></div>
-           <div class="image"><span><img src="images/Comp 1.mp4" alt=""></span></div>
-           <div class="image"><span><img src="images/sam - car 4.jpg" alt=""></span></div>
-           
-          </div>
-        </div>
-
-<!-- portfolio section  Middel -->
-
-        <div class="dream">
-          <div class="gallery">
-             <div class="image"><span><img src="images/BMW DARK 1 (Version 2).jpg" alt=""></span></div>
-             <div class="image"><span><img src="images/Tesla - model 3 performance.jpg" alt=""></span></div>
-             <div class="image"><span><img src="images/DSC01697 copy.jpg" alt=""></span></div>
-             <div class="image"><span><img src="images/tesla 3.jpg" alt=""></span></div>
-             <div class="image"><span><img src="images/9.PNG" alt=""></span></div>
-            
-          </div>
-        </div>
-
-<!-- portfolio section Right -->
-
-       <div class="dream">
-          <div class="gallery">
-              <div class="image"><span><img src="images/BMW P-3.jpg" alt=""></span></div>
-              <div class="image"><span><img src="images/BMW 218I GRAND COUPE.mp4" alt=""></span></div>
-              <div class="image"><span><img src="images/Peugeot P - 10.jpg" alt=""></span></div>
-          </div>
-       </div>
-
-    </div>
-</div>
-
-<!-- portfolio Preview box  -->
-
-  </div>
-     <div class="preview-box">
-       <div class="details">
-         <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
-         <span class="icon fas fa-times"></span>
-       </div>
-       <div class="image-box">
-       <div class="slide prev"><i class="fas fa-angle-left"></i></div>
-       <div class="slide next"><i class="fas fa-angle-right"></i></div>
-       <img src="" alt="">
-     </div>
-   </div>
-         <div class="shadow"></div>
-
-    </section>
-   
-
-<!-- contact section  -->
-
-
-
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form action="https://script.google.com/macros/s/AKfycbzdN5sxsPyNEx_x0MmvFFgvVNAnhaVcQhb6KHVrwuFls0TKZksInMRcU6Zah3Z8il-X/exec " 
-       id="my-form" method="POST">
-            
-               <div class="input-box"> 
-                
-                <input type="text" name="name" placeholder="Name "
-                required>
-                <input type="email" name="email" placeholder="email" required >
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">
+                    <img src="path/to/portfolio1.jpg" alt="Portfolio Item 1">
                 </div>
-
-                <div class="input-box">
-                <input type="number" name="number"  placeholder="Phone">
-                <input type="text" name="Subject"  placeholder="Subject">
-                </div> 
-            
-                <div class="input-box"> 
-                <textarea name="Message"  id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <div class="portfolio-item">
+                    <img src="path/to/portfolio2.jpg" alt="Portfolio Item 2">
                 </div>
-            
-               <input type="submit" value="Send Message" class="btn">
-               <span id="msg"></span>
-       
-        </form>
-      
-        <script>window.addEventListener("load", function() {
-            const form = document.getElementById('my-form');
-            form.addEventListener("submit", function(e) {
-              e.preventDefault();
-              const data = new FormData(form);
-              const action = e.target.action;
-              fetch(action, {
-                method: 'POST',
-                body: data,
-              })
-              .then(response => {
-            msg.innerHTML = "Message sent"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },2000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-          });
-          </script>
+                <div class="portfolio-item">
+                    <img src="path/to/portfolio3.jpg" alt="Portfolio Item 3">
+                </div>
+            </div>
+        </section>
 
-        
-    </section> 
-   
- 
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
-    <!-- footer design -->
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023  Sdl PhotoGraphy| All Rights Reserved.</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
+        <p>&copy; 2024 SDL Visuals. All rights reserved.</p>
     </footer>
 
-
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- custom js -->
-    <script src="js/script.js"></script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
-
