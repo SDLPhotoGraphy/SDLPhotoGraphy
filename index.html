@@ -3,98 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDL Visuals</title>
+    <title>SDL Visuals | Photography & Videography</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="logo">
-            <img src="path/to/logo.png" alt="SDL Visuals Logo">
+    <header>
+        <div class="container">
+            <h1>SDL Visuals</h1>
+            <p>Photography & Videography by Seppe De Luycker</p>
+            <button id="darkModeToggle">Toggle Dark Mode</button>
         </div>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <button id="theme-toggle" class="theme-toggle">🌙</button>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Home Section -->
-        <section id="home" class="home">
-            <div class="home-content">
-                <h1>Welcome to SDL Visuals</h1>
-                <p>Creating stunning visuals with a creative touch.</p>
-                <a href="#contact" class="btn">Contact Us</a>
+    <section id="services">
+        <div class="container">
+            <h2>What I Do</h2>
+            <div class="service-box">
+                <h3>Photography</h3>
+                <p>Capturing the perfect moments with precision and creativity.</p>
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about">
-            <h2>About SDL Visuals</h2>
-            <p>SDL Visuals is dedicated to capturing and showcasing high-quality visuals in the realms of technology, automotive, and desktop setups. Our goal is to bring a unique perspective to each project.</p>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="services">
-            <h2>Our Services</h2>
-            <div class="services-container">
-                <div class="service-box">
-                    <h3>Photography</h3>
-                    <p>Professional photography services to highlight the best aspects of your subject.</p>
-                </div>
-                <div class="service-box">
-                    <h3>Videography</h3>
-                    <p>High-quality video production to bring your vision to life.</p>
-                </div>
-                <div class="service-box">
-                    <h3>Tech Reviews</h3>
-                    <p>Detailed and engaging reviews of the latest technology products.</p>
-                </div>
+            <div class="service-box">
+                <h3>Videography</h3>
+                <p>Telling stories through stunning video production.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio">
+    <section id="portfolio">
+        <div class="container">
             <h2>Portfolio</h2>
-            <div class="portfolio-container">
-                <!-- Placeholder for portfolio items -->
-                <div class="portfolio-item">
-                    <div class="portfolio-image"></div>
-                    <div class="portfolio-info">
-                        <h3>Project Title</h3>
-                        <p>Brief description of the project.</p>
-                    </div>
-                </div>
-                <!-- Repeat .portfolio-item as needed -->
+            <div class="gallery">
+                <img src="photo1.jpg" alt="Portfolio Photo 1">
+                <img src="photo2.jpg" alt="Portfolio Photo 2">
+                <!-- Add more photos as needed -->
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form" action="mailto:de.luycker.seppe@icloud.com" method="post" enctype="text/plain">
+    <section id="about">
+        <div class="container">
+            <h2>About SDL Visuals</h2>
+            <p>With over 5 years of experience in the photography and videography industry, SDL Visuals brings passion and professionalism to every project. Our goal is to deliver high-quality visual content that tells a story and captivates audiences.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
+                <textarea id="message" name="message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 SDL Visuals. All rights reserved.</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SDL Visuals. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
